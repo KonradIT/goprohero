@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="22.0.0"><source path="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/assets"/></dataSet><dataSet config="main"><source path="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/assets"/></dataSet><dataSet config="debug"><source path="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/debug/assets"/></dataSet></merger>

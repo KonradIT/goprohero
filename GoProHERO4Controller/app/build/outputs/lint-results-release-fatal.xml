@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 24.1.2">
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="172"
+            column="21"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="133"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/button2&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="178"
+            column="13"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="124"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="183"
+            column="21"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="133"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                   android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="189"
+            column="20"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="124"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="196"
+            column="21"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="133"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                   android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="202"
+            column="20"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="124"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="207"
+            column="21"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="133"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/button2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                   android:id=&quot;@+id/button2&quot; />"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="213"
+            column="20"/>
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_main.xml"
+            line="124"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        severity="Fatal"
+        message="`@+id/button4` is not a sibling in the same `RelativeLayout`"
+        category="Correctness"
+        priority="6"
+        summary="RelativeLayout Invalid Constraints"
+        explanation="Layout constraints in a given `RelativeLayout` should reference other views within the same relative layout."
+        errorLine1="        android:layout_below=&quot;@+id/button4&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout-land/activity_main.xml"
+            line="20"
+            column="9"/>
+    </issue>
+
+</issues>

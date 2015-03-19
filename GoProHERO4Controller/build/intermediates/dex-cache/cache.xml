@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/classes-fcc32d15b2800b5a5551708c6ce1d2864008d39b.jar" />
+    </item>
+    <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b871304203dee35977dd3f2c433388d17b904fc1.jar" />
+    </item>
+    <item
+        jar="/home/konrad2/Desktop/androidsdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-5d0e0b6782f65f51ec4e644e6c1ab3aad32ec9cb.jar" />
+    </item>
+
+</items>
