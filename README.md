@@ -2,6 +2,10 @@
 
 A better GoPro app for android. 
 
+![](http://i.imgur.com/oAnEbui.png)
+
+![](http://i.imgur.com/iQIAGc7.png)
+
 ###The story: 
 
 When you connect your GoPro camera to your android device and use the GoPro app while doing something, you may have noticed that the buttons are small (even on my Nexus 6 display) and to access the settings there is too much tapping.
