@@ -28,15 +28,19 @@ The app will have constant updates and new features, because I am very active.
 
 Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software development much more effective and faster
 
-* Android wear support **status**: nearly done
-* GPS logging **status**: Not done, low priority
-* Live preview **status**: Doing it
-* media explorer **status**: Comes after live preview
-* auto download photos
-* Audio recorder when it starts recording
-* support all cameras 
-* Make it faster 
-* Show camera data
+| ICE BOX | IN PROGRESS | TESTING | COMPLETE |
+|-------- |-------------|---------|----------|
+|         | Android wear support |   |       |
+|         |             |        | All camera settings |
+|         |             |        | Material + simple UI |
+| GPS logging |    |     |     |
+| Live preview |    |     |     |
+| media explorer |    |    |      |
+| auto download photos |    |    |    |
+|           | Audio recorder when it starts recording |   |   |
+|           | support all cameras | | | 
+|           |             |            | Make it faster |
+| Show camera data |          |        |                 |
 
 ###Features: 
 
