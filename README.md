@@ -26,11 +26,12 @@ The app will have constant updates and new features, because I am very active.
 
 ####Todo: 
 
-* Android wear support
-* all settings remaining
-* GPS logging
-* Live preview 
-* media explorer 
+Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software development much more effective and faster
+
+* Android wear support **status**: nearly done
+* GPS logging **status**: Not done, low priority
+* Live preview **status**: Doing it
+* media explorer **status**: Comes after live preview
 * auto download photos
 * Audio recorder when it starts recording
 * support all cameras 
