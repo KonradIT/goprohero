@@ -28,8 +28,8 @@ The app will have constant updates and new features, because I am very active.
 
 Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software development much more effective and faster
 
-| ICE BOX | IN PROGRESS | TESTING | COMPLETE |
-|-------- |-------------|---------|----------|
+| ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
+|-------------------- |----------------------|---------------------|--------------------|
 |         | Android wear support |   |       |
 |         |             |        | All camera settings |
 |         |             |        | Material + simple UI |
