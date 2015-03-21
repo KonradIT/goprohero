@@ -33,6 +33,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |         | Android wear support |   |       |
 |         |             |        | All camera settings |
 |         |             |        | Material + simple UI |
+|         |             | Fix specific H4 modes |        |
 |         | Landscape UI| |         |
 | GPS logging |    |     |     |
 | Live preview |    |     |     |
