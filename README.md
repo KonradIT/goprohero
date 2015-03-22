@@ -30,7 +30,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 
 | ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
 |-------------------- |----------------------|---------------------|--------------------|
-|                     | Android wear support |                     |                    |
+|    Android wear support (fix static activity calling)                  | |                     |                    |
 |                     |                      |                     | All camera settings |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
