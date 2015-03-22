@@ -48,10 +48,15 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 
 ###Features: 
 
-* Volume rocker control 
-* Big buttons 
-* Start/stop and basic settings 
-* Change modes 
+* Material design
+* Big buttons
+* No waiting time for connection
+* Trigger using volume rockers (up = record/take pic, down = stop)
+* Lots of settings
+* Profiles (action, indoor, cinematic)
+* 
+
+And more
 
 Hopefully the items of the to do list will be in the list above.
 
