@@ -55,7 +55,6 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Trigger using volume rockers (up = record/take pic, down = stop)
 * Lots of settings
 * Profiles (action, indoor, cinematic)
-* 
 
 And more
 
