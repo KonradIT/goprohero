@@ -11,6 +11,7 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
     </style>
 
     <!-- Application theme. -->
@@ -18,5 +19,14 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="Buttons"
+        parent="android:Theme.Material.Light">
 
+    </style>
+    <style name="ActionBarTheme" parent="android:Theme.Holo">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/action_bar</item>
+
+        <item name="android:textColor">@color/text_color</item>
+    </style>
 </resources>

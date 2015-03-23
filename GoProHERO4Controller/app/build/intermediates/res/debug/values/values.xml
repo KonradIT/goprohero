@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="action_bar">#002233</color>
+    <color name="text_color">#FFFFFF</color>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -24,35 +28,30 @@
     <string name="action_reply">Reply</string>
     <string name="action_share">Share</string>
     <string name="app_name">GoPro Hero</string>
+    <string name="back">Back</string>
     <string name="developed">Developed by Konrad Iturbe (XDA / GITHUB: @KonradIT | /u/konrad-iturbe)</string>
     <string name="hd">HD</string>
     <string name="hello">Hello World!</string>
     <string name="hello_world">Hello world!</string>
     <string name="looping">Looping</string>
+    <string name="mail">Mail me</string>
     <string name="midres">1080p</string>
     <string name="modemsburst">Burst</string>
     <string name="modemsnightlapse">NightLapse</string>
     <string name="modemstimelapse">Timelapse</string>
-    <string name="modephotocontinuous">Continuous</string>
+    <string name="modephotocontinuous">Cont.</string>
     <string name="modephotonight">Nightpic</string>
     <string name="modephotosingle">Single pic</string>
     <string name="modevideolooping">Looping</string>
     <string name="modevideovideo">Video</string>
     <string name="modevideovideophoto">VideoPic</string>
     <string name="multishot">MultiShot</string>
-    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
-        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
-        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
-        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
-        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
-        tortor.
-    </string>
     <string name="new_message_notification_title_template">New message: %1$s</string>
     <string name="notification_posted">Notification posted</string>
     <string name="photo">Photo</string>
     <string name="protuneOFF">PT OFF</string>
     <string name="protuneON">PT ON</string>
+    <string name="reddit">Reddit thread</string>
     <string name="settings">.</string>
     <string name="single">Single</string>
     <string name="slowmo">SlowMo</string>
@@ -64,19 +63,27 @@
     <string name="video2">Video</string>
     <string name="videophoto">VidPic</string>
     <string name="vidres_prompt">Video resolutions</string>
+    <string name="webpage">Webpage</string>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="ActionBarTheme" parent="android:Theme.Material">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/action_bar</item>
+
+        <item name="android:textColor">@color/text_color</item>
+    </style>
     <style name="AppBaseTheme" parent="android:Theme.Material">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">#FF0000</item>
+    <style name="Buttons" parent="android:Theme.Material.Light">
+
     </style>
 </resources>

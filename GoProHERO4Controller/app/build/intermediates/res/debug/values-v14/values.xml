@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-v14/colors.xml -->
+    <eat-comment/>
+    <color name="action_bar">#002233</color>
+    <color name="text_color">#FFFFFF</color>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-v14/styles.xml -->
     <eat-comment/>
+    <style name="ActionBarTheme" parent="android:Theme.Holo">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/action_bar</item>
+
+        <item name="android:textColor">@color/text_color</item>
+    </style>
     <style name="AppBaseTheme" parent="android:Theme.Material">
 
         <!--
@@ -9,8 +19,12 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="Buttons" parent="android:Theme.Material.Light">
+
     </style>
 </resources>

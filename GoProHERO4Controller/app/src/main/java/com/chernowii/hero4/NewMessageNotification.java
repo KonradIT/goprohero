@@ -55,7 +55,7 @@ public class NewMessageNotification {
         final String title = res.getString(
                 R.string.new_message_notification_title_template, exampleString);
         final String text = res.getString(
-                R.string.new_message_notification_placeholder_text_template, exampleString);
+                R.string.video, exampleString);
 
         final NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
 

@@ -2,8 +2,17 @@ package com.chernowii.hero4;
 
 import android.app.Activity;
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
+import android.content.res.Resources;
+import android.location.Address;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +27,9 @@ import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.widget.Toast;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -39,6 +51,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.location.Location;
+import android.location.LocationListener;
 import android.widget.EditText;
 import android.widget.TextView;
 import org.apache.http.HttpResponse;
@@ -163,10 +177,28 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	
-	
+    public void sendTriggerTwo() {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "Trigger!", Toast.LENGTH_SHORT).show();
+//GET("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
 
-	/**
+    }
+
+    public void sendTriggerWear() {
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
+    }
+    public static void sendStopWear() {
+    }
+    public static void sendTagWear() {
+
+    }
+
+
+
+    /**
 	 * A placeholder fragment containing a simple view.
 	 */
 	
@@ -189,46 +221,93 @@ public class MainActivity extends Activity {
 	    public boolean onKeyDown(int keyCode, KeyEvent event) {
 	        if ((keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)){
 	            //Do something:
-	        	Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-	            v.vibrate(500);
+                Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+                v.vibrate(200);
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                v.vibrate(300);
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                v.vibrate(300);
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                v.vibrate(300);
+                Toast.makeText(getApplicationContext(),
+                        "Stopped!", Toast.LENGTH_SHORT).show();
 	            new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=0");
 	        }
 	        if ((keyCode == KeyEvent.KEYCODE_VOLUME_UP)){
 	            //Do something:
-	        	Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-	            v.vibrate(500);
+                Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+                v.vibrate(600);
+                Toast.makeText(getApplicationContext(),
+                        "Trigger!", Toast.LENGTH_SHORT).show();
 	            new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
 	        }
 	        return true;
 	    }
 	// END OF VOLUME ROCKER ROFLMAO!!
 	//SOME GOOD NOTIFICATION LMAOs
-    protected void displayNotification() {
-        Log.i("Start", "notification");
 
-      /* Invoking the default notification service */
-        NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(this);
-
-        mBuilder.setContentTitle("New Message");
-        mBuilder.setContentText("You've received new message.");
-        mBuilder.setTicker("New Message Alert!");
-    }
 
         //START OF THE WIFI HERO4 COMMANDS:
-	
+
 	public void sendTrigger(View view) {
 		Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(1000);
-		Toast.makeText(getApplicationContext(), 
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
                 "Trigger!", Toast.LENGTH_SHORT).show();
 //GET("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
     }
+    public void sendTriggerGPS(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "Trigger!", Toast.LENGTH_SHORT).show();
+//GET("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=1");
+    }
+    public void sendAbout(View view) {
+        new AlertDialog.Builder(this)
+                .setTitle("About GoProHero")
+                .setMessage("Developed by Konrad Iturbe\nGOPRO, HERO, the GOPRO logo, and the GoPro Be a Hero logo are trademarks or registered trademarks of GoPro, Inc")
+                .setPositiveButton(R.string.webpage, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/KonradIT/goprohero/blob/master/README.md"));
+                        startActivity(browserIntent);
+                    }
+                })
+                .setNeutralButton(R.string.reddit, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.reddit.com/r/Android/comments/2zxv84/devalpha_goprohero_unofficial_gopro_app/"));
+                        startActivity(browserIntent);
+                    }
+                })
+
+                .setNegativeButton(R.string.back, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do nothing
+                    }
+                })
+                .setIcon(R.drawable.ic_launcher)
+                .show();
+    }
     public void sendWear(View view) {
+        Intent intent = new Intent( getApplicationContext(), MediaPlayerService.class );
+        intent.setAction( MediaPlayerService.ACTION_PLAY );
+        startService( intent );
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
         v.vibrate(1000);
-        Intent intent = new Intent(this, NotifyReceiverForWear.class);
         PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent,
                 PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -257,48 +336,78 @@ public class MainActivity extends Activity {
 
 
     public void sendStop(View view) {
-		Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(1000);
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(200);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        v.vibrate(300);
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        v.vibrate(300);
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        v.vibrate(300);
 		Toast.makeText(getApplicationContext(), 
                 "Stopped!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=0");
-		
+
 	}
 	public void sendTag(View view) {
 		Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-         v.vibrate(500);
+        v.vibrate(300);
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        v.vibrate(300);
 		Toast.makeText(getApplicationContext(), 
                 "Tagged!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/storage/tag_moment");
 	}
 	public void sendVideo(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
 		Toast.makeText(getApplicationContext(), 
-                "Set to Video mode!", Toast.LENGTH_LONG).show();
+                "Set to Video mode!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/mode?p=0");
 	}
 	public void sendPhoto(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
 		Toast.makeText(getApplicationContext(), 
-                "Set to Photo mode!", Toast.LENGTH_LONG).show();
+                "Set to Photo mode!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/mode?p=1");
 	}
 	public void sendMultishot(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
 		Toast.makeText(getApplicationContext(), 
-                "Set to MultiShot mode!", Toast.LENGTH_LONG).show();
+                "Set to MultiShot mode!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/mode?p=2");
 	}
 	public void sendHD(View view) {
 		Toast.makeText(getApplicationContext(), 
-                "HD Resolution!", Toast.LENGTH_LONG).show();
+                "HD Resolution!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/2/1");
 	}
 	public void sendMidres(View view) {
 		Toast.makeText(getApplicationContext(), 
-                "1080p FTW!", Toast.LENGTH_LONG).show();
+                "1080p FTW!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/2/9");
 	}
 	public void sendSlowMo(View view) {
 		Toast.makeText(getApplicationContext(), 
-                "That epic slow mo!", Toast.LENGTH_LONG).show();
+                "That epic slow mo!", Toast.LENGTH_SHORT).show();
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/2/12");
 		new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/0");
 	}
@@ -473,198 +582,254 @@ public void sendETNP30(View view) {
         v.vibrate(80);
         Toast.makeText(getApplicationContext(),
                 "2sec", Toast.LENGTH_SHORT).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/19/1");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/31/1");
     }
     public void sendETNI5(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
         v.vibrate(80);
         Toast.makeText(getApplicationContext(),
                 "5sec", Toast.LENGTH_SHORT).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/19/2");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/31/2");
     }
     public void sendETNI10(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
         v.vibrate(80);
         Toast.makeText(getApplicationContext(),
                 "10sec", Toast.LENGTH_SHORT).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/19/3");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/31/3");
     }
     public void sendETNI15(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
         v.vibrate(80);
         Toast.makeText(getApplicationContext(),
                 "15sec", Toast.LENGTH_SHORT).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/19/4");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/31/4");
     }
     public void sendETNI20(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
         v.vibrate(80);
         Toast.makeText(getApplicationContext(),
                 "20sec", Toast.LENGTH_SHORT).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/19/5");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/31/5");
     }
     public void sendETNI30(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
         v.vibrate(80);
         Toast.makeText(getApplicationContext(),
                 "30sec", Toast.LENGTH_SHORT).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/19/6");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/31/6");
     }
+    public static int myVar = 1;
     public void send120FPS(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(80);
+        v.vibrate(600);
         Toast.makeText(getApplicationContext(),
                 "120FPS", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/0");
     }
     public void send60FPS(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(80);
+        v.vibrate(400);
         Toast.makeText(getApplicationContext(),
                 "60FPS", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/5");
     }
     public void send30FPS(View view) {
         Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(80);
+        v.vibrate(200);
         Toast.makeText(getApplicationContext(),
                 "30FPS", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/8");
     }
 
     public void sendProtuneON(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
         Toast.makeText(getApplicationContext(),
-                "Protune ON!", Toast.LENGTH_LONG).show();
+                "Protune ON!", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/10/1");
     }
     public void sendProtuneOFF(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
         Toast.makeText(getApplicationContext(),
-                "Protune OFF!", Toast.LENGTH_LONG).show();
+                "Protune OFF!", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/10/0");
     }
     public void send05TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 0.5 seconds", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/0");
+                "Timelapse 0.5 seconds", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/0");
     }
     public void send1TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 1 second", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/1");
+                "Timelapse 1 second", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/1");
     }
     public void send2TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 2 seconds", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/2");
+                "Timelapse 2 seconds", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/2");
     }
     public void send5TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 3 seconds", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/3");
+                "Timelapse 5 seconds", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/5");
     }
     public void send10TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 10 seconds", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/4");
+                "Timelapse 10 seconds", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/10");
     }
     public void send30TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 30 seconds", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/5");
+                "Timelapse 30 seconds", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/30");
     }
     public void send60TLI(View view) {
         Toast.makeText(getApplicationContext(),
-                "Timelapse 60 seconds", Toast.LENGTH_LONG).show();
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/5/6");
+                "Timelapse 60 seconds", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/30/60");
     }
     public void sendWBAuto(View view) {
         Toast.makeText(getApplicationContext(),
-                "WB Auto", Toast.LENGTH_LONG).show();
+                "WB Auto", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/11/0");
     }
     public void sendWB3000K(View view) {
         Toast.makeText(getApplicationContext(),
-                "WB 3000K", Toast.LENGTH_LONG).show();
+                "WB 3000K", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/11/1");
     }
     public void sendWB5500K(View view) {
         Toast.makeText(getApplicationContext(),
-                "WB 5500K", Toast.LENGTH_LONG).show();
+                "WB 5500K", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/11/2");
     }
     public void sendWB6500K(View view) {
         Toast.makeText(getApplicationContext(),
-                "WB 6500K", Toast.LENGTH_LONG).show();
+                "WB 6500K", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/11/3");
     }
 
     public void sendQKOn(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
         Toast.makeText(getApplicationContext(),
-                "QuikCapture ON", Toast.LENGTH_LONG).show();
+                "QuikCapture ON", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/54/1");
     }
     public void sendQKOff(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
         Toast.makeText(getApplicationContext(),
-                "QuikCapture OFF", Toast.LENGTH_LONG).show();
+                "QuikCapture OFF", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/54/0");
     }
 
     public void sendLEDOff(View view) {
         Toast.makeText(getApplicationContext(),
-                "LEDs OFF", Toast.LENGTH_LONG).show();
+                "LEDs OFF", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/55/0");
     }
     public void sendLED2(View view) {
         Toast.makeText(getApplicationContext(),
-                "LEDs 2", Toast.LENGTH_LONG).show();
+                "LEDs 2", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/55/1");
     }
     public void sendLED4(View view) {
         Toast.makeText(getApplicationContext(),
-                "LEDs 4", Toast.LENGTH_LONG).show();
+                "LEDs 4", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/55/2");
     }
     public void sendBuzzerOff(View view) {
         Toast.makeText(getApplicationContext(),
-                "Buzzer Off", Toast.LENGTH_LONG).show();
+                "Buzzer Off", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/56/2");
     }
     public void sendBuzzer70(View view) {
         Toast.makeText(getApplicationContext(),
-                "Buzzer 70%", Toast.LENGTH_LONG).show();
+                "Buzzer 70%", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/56/1");
     }
     public void sendBuzzer100(View view) {
         Toast.makeText(getApplicationContext(),
-                "Buzzer 100%", Toast.LENGTH_LONG).show();
+                "Buzzer 100%", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/56/0");
     }
 
     public void sendActionProfile(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
         Toast.makeText(getApplicationContext(),
-                "Be A HERO", Toast.LENGTH_LONG).show();
+                "Be A HERO", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/2/9");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/5");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/4/0");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/10/0");
     }
     public void sendCinemaProfile(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(300);
         Toast.makeText(getApplicationContext(),
-                "Be A HERO", Toast.LENGTH_LONG).show();
+                "Be A HERO", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/2/4");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/10");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/4/0");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/10/1");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/11/4");
     }
+    public void sendGPS(View view) {
+
+        }
+
     public void sendIndoorProfile(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(400);
         Toast.makeText(getApplicationContext(),
-                "Be A HERO", Toast.LENGTH_LONG).show();
+                "Be A HERO", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/2/9");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/3/8");
-        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/4/1");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/4/0");
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/10/0");
     }
 
+    public void sendWiFiOff(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "Wifi Off", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/63/0");
+    }
+    public void sendCamOff(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "Turned off", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/system/sleep");
+    }
+    public void sendFullOff(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "WiFi+Camera OFF", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/system/sleep");
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/setting/63/0");
+    }
+    public void sendDeleteAll(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "Camera media empty", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/storage/delete/all");
+    }
+    public void sendDeleteLast(View view) {
+        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        v.vibrate(600);
+        Toast.makeText(getApplicationContext(),
+                "Deleted last file", Toast.LENGTH_SHORT).show();
+        new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/storage/delete/last");
+    }
     // END OF RISKY ZONE; CARRY ON.
 
 
@@ -724,7 +889,7 @@ public void sendETNP30(View view) {
 	        // onPostExecute displays the results of the AsyncTask.
 	        @Override
 	        protected void onPostExecute(String result) {
-	            Toast.makeText(getBaseContext(), "Done!", Toast.LENGTH_LONG).show();
+	            Toast.makeText(getBaseContext(), "Done!", Toast.LENGTH_SHORT).show();
 	           ;
 	       }
 	    }

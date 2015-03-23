@@ -1,23 +1,32 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.chernowii.goprohero4.MainActivity" >
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <!-- <GridLayout
+         android:id="@+id/gridLayout1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/Button05"
+         android:layout_marginLeft="8dp"
+         android:layout_marginTop="22dp"
+         android:rowCount="6" >
+     </GridLayout>-->
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/developed"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <ScrollView
         android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView7"
-        android:layout_alignLeft="@+id/textView7"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/button4"
+        android:layout_gravity="center_horizontal"
         android:scrollbars="horizontal" >
 
         <TableLayout
@@ -27,114 +36,92 @@
             android:orientation="vertical" >
             <TableRow>
                 <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:onClick="sendTag"
+                    android:text="@string/tag"
+                    android:background="#336699" />
+
+                <Button
                     android:id="@+id/button1"
                     android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_weight=".60"
-                    android:layout_alignParentLeft="true"
                     android:onClick="sendTrigger"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="5dp"
                     android:text="@string/trigger"
+                    android:radius="25dp"
                     android:background="#780000"/>
 
                 <Button
-                    android:id="@+id/Button01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/button1"
-                    android:layout_alignRight="@+id/button1"
-                    android:layout_below="@+id/button1"
-                    android:layout_marginTop="10dp"
-                    android:onClick="sendTag"
-                    android:text="@string/tag"
-                    android:background="#336699"/>
-
-                <Button
                     android:id="@+id/Button02"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/Button01"
-                    android:layout_alignRight="@+id/Button01"
-                    android:layout_below="@+id/Button01"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:onClick="sendStop"
                     android:text="@string/stop"
-                    android:background="#006633"/>
+                    android:background="#006633"
+                    android:elevation="10dp"
 
+                    />
 
-                <!-- <GridLayout
-                     android:id="@+id/gridLayout1"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:layout_alignLeft="@+id/Button05"
-                     android:layout_marginLeft="8dp"
-                     android:layout_marginTop="22dp"
-                     android:rowCount="6" >
-                 </GridLayout>-->
-
+            </TableRow>
+            <TableRow>
                 <Button
-                    android:id="@+id/Button03"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/ButtonVideo"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/Button05"
-                    android:layout_alignBottom="@+id/Button05"
-                    android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/Button04"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="6dp"
                     android:onClick="sendVideo"
-                    android:text="@string/video" />
+                    android:text="@string/video"/>
 
                 <Button
                     android:id="@+id/Button05"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/Button02"
                     android:layout_marginTop="6dp"
                     android:onClick="sendMultishot"
-                    android:text="@string/multishot" />
+                    android:text="@string/multishot"/>
 
                 <Button
                     android:id="@+id/Button04"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/Button03"
-                    android:layout_alignBottom="@+id/Button03"
-                    android:layout_toLeftOf="@+id/Button05"
                     android:layout_marginTop="6dp"
                     android:onClick="sendPhoto"
-                    android:text="@string/photo" />
-
+                    android:text="@string/photo"/>
+</TableRow>
+            <TableRow>
                 <Button
                     android:id="@+id/button4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/button3"
-                    android:layout_alignBottom="@+id/button3"
-                    android:layout_alignLeft="@+id/Button05"
-                    android:layout_alignRight="@+id/textView7"
                     android:layout_marginTop="6dp"
                     android:onClick="sendSlowMo"
-                    android:text="@string/slowmo" />
+                    android:text="@string/slowmo"/>
 
                 <Button
                     android:id="@+id/button3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/button2"
-                    android:layout_alignBottom="@+id/button2"
-                    android:layout_toLeftOf="@+id/Button05"
-                    android:layout_toRightOf="@+id/button2"
                     android:layout_marginTop="6dp"
                     android:onClick="sendMidres"
                     android:text="@string/midres" />
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
                     android:layout_marginTop="6dp"
                     android:onClick="sendHD"
                     android:text="@string/hd" />
@@ -320,7 +307,7 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNP2"
-                    android:text="@string/ETNP2" />
+                    android:text="@string/ETNI2" />
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight=".33"
@@ -329,7 +316,7 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNP5"
-                    android:text="@string/ETNP5" />
+                    android:text="@string/ETNI5" />
                 <Button
 
                     android:layout_width="0dp"
@@ -339,7 +326,7 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNP10"
-                    android:text="@string/ETNP10" />
+                    android:text="@string/ETNI10" />
 
             </TableRow>
 
@@ -352,7 +339,7 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNP15"
-                    android:text="@string/ETNP15" />
+                    android:text="@string/ETNI15" />
                 <Button
 
                     android:layout_width="0dp"
@@ -362,7 +349,7 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNP20"
-                    android:text="@string/ETNP20" />
+                    android:text="@string/ETNI20" />
                 <Button
 
                     android:layout_width="0dp"
@@ -372,7 +359,7 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNP30"
-                    android:text="@string/ETNP30" />
+                    android:text="@string/ETNI30" />
             </TableRow>
 
             <!--COMMENT-->
@@ -610,8 +597,340 @@
                     android:onClick="send60TLI"
                     android:text="60s" />
             </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Frame Rate:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Choose frame rates according to resolution" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Hero4 Black:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="4K 30FPS/24FPS" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="2.7K 60/30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="1080 120/60/30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Hero4 Silver:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="1080 60/30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="720p 120/60:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send120FPS"
+                    android:text="120" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send60FPS"
+                    android:text="60" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send30FPS"
+                    android:text="30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Video WB (PT ON needed):" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendWBAuto"
+                    android:text="Auto" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendWB3000K"
+                    android:text="3000k" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendWB5500K"
+                    android:text="5500k" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendWB6500K"
+                    android:text="6500k" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="QuikCapture:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendQKOn"
+                    android:text="ON" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendQKOff"
+                    android:text="OFF" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="LED blink:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLEDOff"
+                    android:text="OFF" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLED2"
+                    android:text="2" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLED4"
+                    android:text="4" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Buzzer volume:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendBuzzerOff"
+                    android:text="OFF" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendBuzzer70"
+                    android:text="70%" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendBuzzer100"
+                    android:text="100%" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Profiles:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Cinematic: HD video at 24FPS with the protune settings" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Action: 60FPS blended with jaw dropping HD video" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Indoor: best setting for indoors" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendCinemaProfile"
+                    android:text="Cinematic" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendActionProfile"
+                    android:text="Action" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendIndoorProfile"
+                    android:text="Indoor" />
+            </TableRow>
         </TableLayout>
     </ScrollView>
-
-
-</RelativeLayout>
+</LinearLayout>

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.chernowii.hero4"
-        minSdkVersion 21
+        minSdkVersion 18
         targetSdkVersion 21
     }
 

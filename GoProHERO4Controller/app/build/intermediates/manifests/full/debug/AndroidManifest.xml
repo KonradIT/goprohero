@@ -5,8 +5,14 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="18"
         android:targetSdkVersion="21" />
+
+    <receiver android:name="com.chernowii.hero4.MediaButtonIntentReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.MEDIA_BUTTON" />
+        </intent-filter>
+    </receiver>
 
     <intent-filter android:priority="5" >
         <action android:name="android.intent.action.MEDIA_BUTTON" />
@@ -16,30 +22,24 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_launcher2"
         android:label="@string/app_name"
         android:theme="@style/AppBaseTheme" >
         <activity
             android:name="com.chernowii.hero4.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.chernowii.hero4.MyStubBroadcastActivity"
-            android:label="MyStubBroadcastActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -56,6 +56,22 @@
 
         <receiver
             android:name="com.chernowii.hero4.MyPostNotificationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.chernowii.hero4.SHOW_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.chernowii.hero4.MyDisplayActivity"
+            android:allowEmbedded="true"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.Light" >
+        </activity>
+
+        <receiver
+            android:name="com.chernowii.hero4.MyPostNotificationReceiver2"
             android:exported="true" >
             <intent-filter>
                 <action android:name="com.chernowii.hero4.SHOW_NOTIFICATION" />

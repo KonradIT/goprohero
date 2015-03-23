@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -10,14 +10,21 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <style name="MyActionBar"
-        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">#FF0000</item>
+    <style name="Buttons"
+        parent="android:Theme.Material.Light">
+
+    </style>
+    <style name="ActionBarTheme" parent="android:Theme.Holo.Light">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/action_bar</item>
+
+        <item name="android:textColor">@color/text_color</item>
     </style>
 </resources>
