@@ -26,23 +26,37 @@ The app will have constant updates and new features, because I am very active.
 
 ####Todo: 
 
-* Android wear support
-* all settings remaining
-* GPS logging
-* Live preview 
-* media explorer 
-* auto download photos
-* Audio recorder when it starts recording
-* support all cameras 
-* Make it faster 
-* Show camera data
+Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software development much more effective and faster
+
+| ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
+|-------------------- |----------------------|---------------------|--------------------|
+|    Android wear support (fix static activity calling)                  | |                     |  
+|  |  | Make compatible from API 16 JB to 5.1 Latest |  |
+|                     |                      |                     | All camera settings |
+|                     |                      |                      | Material + simple UI |
+|                     | Fix specific H4 modes |                    |                       |
+|                     |                       |                    | Fix NightLapse         |
+| Car stereo controller  |  |  |  |
+|         |  | |  Landscape UI       |
+| GPS logging |    |     |     |
+| Live preview |    |     |     |
+| media explorer |    |    |      |
+| auto download photos |    |    |    |
+| Audio recorder when it starts recording |   |   |   |
+|     support all cameras      |  | | | 
+|           |             |            | Make it faster |
+| Show camera data |          |        |                 |
 
 ###Features: 
 
-* Volume rocker control 
-* Big buttons 
-* Start/stop and basic settings 
-* Change modes 
+* Material design
+* Big buttons
+* No waiting time for connection
+* Trigger using volume rockers (up = record/take pic, down = stop)
+* Lots of settings
+* Profiles (action, indoor, cinematic)
+
+And more
 
 Hopefully the items of the to do list will be in the list above.
 
