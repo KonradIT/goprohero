@@ -31,7 +31,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 | ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
 |-------------------- |----------------------|---------------------|--------------------|
 |    Android wear support (fix static activity calling)                  | |                     |  
-|  |  |  | Make compatible from API 16 JB to 5.1 Latest  |
+|  |  |  | Make compatible from API 18 JB to 5.1 (Latest)  |
 |                     |                      |                     | All camera settings |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
