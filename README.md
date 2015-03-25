@@ -63,6 +63,6 @@ Hopefully the items of the to do list will be in the list above.
 
 ###Updates: 
 
-Check the github releases page for the latest release.
+Subscribe to pushbullet: #goproapp
 
 Developed by Konrad Iturbe
