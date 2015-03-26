@@ -2,9 +2,15 @@
 
 A better GoPro app for android. 
 
-![](http://i.imgur.com/oAnEbui.png)
+![](http://i.imgur.com/moBRw6K.png)
 
-![](http://i.imgur.com/iQIAGc7.png)
+![](http://i.imgur.com/vwjyWiE.png)
+
+![](http://i.imgur.com/bEiaWh3.png)
+
+![](http://i.imgur.com/wVrRE0v.png)
+
+![](http://i.imgur.com/I6urBmL.png)
 
 ###The story: 
 
