@@ -42,6 +42,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
 | Fix title in status bar |  |  |  |
+|   |   | HDR Control for Hero4 |  |
 |                     |                       |                    | Fix NightLapse         |
 | Car stereo controller  |  |  |  |
 |         |  | |  Landscape UI       |
