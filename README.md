@@ -33,10 +33,9 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |-------------------- |----------------------|---------------------|--------------------|
 |  |  |  | Make compatible from API 18 JB to 5.1 (Latest)  |
 |                     |                      |                     | All camera settings |
-|  |  |   |   Smart notifucation with buttons (for android wear, lockscreen, etc...) |
+|  |  |   |   Smart notification with buttons (for android wear, lockscreen, etc...) |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
-| Fix title in status bar |  |  |  |
 |   |   |  | HDR Control for Hero4  |
 |                     |                       |                    | Fix NightLapse         |
 |  |  |  Car stereo controller  |  |
@@ -45,7 +44,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 | Live preview |    |     |     |
 | media explorer |    |    |      |
 | auto download photos |    |    |    |
-| Audio recorder when it starts recording |   |   |   |
+|  |   |   | Audio recorder when it starts recording   |
 |     support all cameras      |  | | | 
 |           |             |            | Make it faster |
 | Show camera data |          |        |                 |
@@ -55,6 +54,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Material design
 * Big buttons
 * No waiting time for connection
+* HDR trigger with 4 types of bracketing levels, for Hero4 only
 * Trigger using volume rockers (up = record/take pic, down = stop)
 * Lots of settings
 * Profiles (action, indoor, cinematic)
