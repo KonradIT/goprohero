@@ -6,11 +6,6 @@ A better GoPro app for android.
 
 ![](http://i.imgur.com/vwjyWiE.png)
 
-![](http://i.imgur.com/bEiaWh3.png)
-
-![](http://i.imgur.com/wVrRE0v.png)
-
-![](http://i.imgur.com/I6urBmL.png)
 
 ###The story: 
 
@@ -36,15 +31,15 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 
 | ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
 |-------------------- |----------------------|---------------------|--------------------|
-|    Android wear support (fix static activity calling)                  | |                     |  
 |  |  |  | Make compatible from API 18 JB to 5.1 (Latest)  |
 |                     |                      |                     | All camera settings |
+|  |  |   |   Smart notifucation with buttons (for android wear, lockscreen, etc...) |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
 | Fix title in status bar |  |  |  |
 |   |   |  | HDR Control for Hero4  |
 |                     |                       |                    | Fix NightLapse         |
-| Car stereo controller  |  |  |  |
+|  |  |  Car stereo controller  |  |
 |         |  | |  Landscape UI       |
 | GPS logging |    |     |     |
 | Live preview |    |     |     |
@@ -63,6 +58,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Trigger using volume rockers (up = record/take pic, down = stop)
 * Lots of settings
 * Profiles (action, indoor, cinematic)
+* HeroControl: notification with controls for the lockscreen, android wear, etc...
 
 And more
 
