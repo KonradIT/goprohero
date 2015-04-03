@@ -133,65 +133,75 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.RemoteInput;
 import android.app.Notification;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.wearable.MessageApi;
+import com.google.android.gms.wearable.Wearable;
+
+
+//import com.chernowii.hero4.MainActivity;
+
 public class MainActivityForWear extends Activity {
+    private static final String TAG = "AYY LMAO" ;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_for_wear);
         if (savedInstanceState == null) {
             super.onCreate(savedInstanceState);
+
             setContentView(R.layout.activity_main_activity_for_wear);
         }
 
+
     }
-    public void sendStopWear(View view) {
-        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(600);
+    GoogleApiClient mGoogleApiClient;
+    public static final String START_ACTIVITY_PATH = "/start/MainActivity";
+    private void sendStartActivityMessage(String nodeId) {
+        Wearable.MessageApi.sendMessage(
+                mGoogleApiClient, nodeId, START_ACTIVITY_PATH, new byte[0]).setResultCallback(
+                new ResultCallback<MessageApi.SendMessageResult>() {
+                    @Override
+                    public void onResult(MessageApi.SendMessageResult sendMessageResult) {
+                        if (!sendMessageResult.getStatus().isSuccess()) {
+                            Log.e(TAG, "Failed to send message with status code: "
+                                    + sendMessageResult.getStatus().getStatusCode());
+                        }
+                    }
+                }
+        );
+    }
+    public void sendNotifWear(View view) {
+
+        Vibrator va = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        va.vibrate(600);
+       // Intent intentTwo = new Intent(this, MainActivity.class);
+        //startActivity(intentTwo);
+    }
+    public void sendTriggerWear(View v) {
+        Vibrator va = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        va.vibrate(600);
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        v.vibrate(600);
-        try {
-            Thread.sleep(600);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        v.vibrate(600);
-        try {
-            Thread.sleep(600);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        v.vibrate(600);
-        Toast.makeText(getApplicationContext(),
-                "Stopped!", Toast.LENGTH_SHORT).show();
-      new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=0");
-     //   MainActivity.sendStopWear();
-    }
-    public void sendTriggerWear(View view) {
-        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(600);
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        v.vibrate(600);
+        va.vibrate(600);
         Toast.makeText(getApplicationContext(),
                 "Trigger!", Toast.LENGTH_SHORT).show();
         new HttpAsyncTask().execute("http://10.5.5.9/gp/gpControl/command/shutter?p=0");
-//MainActivity.sendTriggerWear();
+        //    MainActivity sendTrigger = new MainActivity();
+  //sendTrigger.sendTriggerTest2();
     }
-    public void sendTagWear(View view) {
-        Vibrator v = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        v.vibrate(1000);
+    public void sendTagWear(View v) {
+        Vibrator va = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        va.vibrate(1000);
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        v.vibrate(1000);
+        va.vibrate(1000);
         Toast.makeText(getApplicationContext(),
                 "Tagged!", Toast.LENGTH_SHORT).show();
 

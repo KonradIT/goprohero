@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_calc">Timelapse Calculator</string>
+    <string name="wifi">Open WiFi settings</string>
+    <string name="permdesc_flashlight">Ayy lmao</string>
+    <string name="permlab_flashlight">Ayy lmao shrek republic reddit</string>
+</resources>

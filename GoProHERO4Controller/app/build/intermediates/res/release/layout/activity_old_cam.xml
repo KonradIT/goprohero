@@ -1,0 +1,872 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:icon="@drawable/icono"
+    android:label="GoProHero App"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chernowii.goprohero4.OldCamActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        android:onClick="sendTurnOn"
+        android:id="@+id/button29"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button30" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off"
+        android:onClick="sendTurnOff"
+        android:id="@+id/button30"
+        android:layout_above="@+id/scrollView1"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:onClick="sendStop"
+        android:id="@+id/button31"
+        android:layout_above="@+id/scrollView1"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button30" />
+    <!--<Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+        android:onClick="sendTrigger"
+        android:text="Trigger"
+        android:radius="25dp"
+        android:background = "@drawable/roundbutton"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_alignBottom="@+id/Button02"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/ButtonVideo" />-->
+
+
+    <!-- <GridLayout
+         android:id="@+id/gridLayout1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/Button05"
+         android:layout_marginLeft="8dp"
+         android:layout_marginTop="22dp"
+         android:rowCount="6" >
+     </GridLayout>-->
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="+"
+        android:textSize="40sp"
+        android:id="@+id/fabbutton"
+        android:onClick="sendTrigger"
+        android:layout_margin="0dp"
+        android:elevation="10dp"
+        android:background = "@drawable/roundbutton"
+        android:paddingBottom="6dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:scrollbars="horizontal"
+        android:layout_marginBottom="40dp"
+        android:background="#272727"
+        android:layout_below="@+id/button29">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+            <Button
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:onClick="sendVideo"
+                android:id="@+id/button39"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/button40" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo"
+                android:onClick="sendPhoto"
+                android:id="@+id/button40"
+                android:layout_above="@+id/scrollView1"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burst"
+                android:onClick="sendBurst"
+                android:id="@+id/button41"
+                android:layout_above="@+id/scrollView1"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/button40" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TimeLapse"
+                android:onClick="sendTimelapse"
+                android:id="@+id/button42"
+                android:layout_above="@+id/scrollView1"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/button41" />
+            <TableRow>
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendDisplayAdvancedProtune"
+                    android:background="#C233"
+                    android:text="Protune settings" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="10dp"
+                    android:onClick="goProControlNotification"
+                    android:background="#1AA"
+                    android:text="Launch HeroControl" />
+            </TableRow>
+            <TableRow>
+
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="10dp"
+                    android:onClick="sendDisplayLiveView"
+                    android:background="#C55555"
+                    android:text="Live View HERO2/3/3+" />
+
+            </TableRow>
+            <!--<TableRow>
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_weight=".99"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Button03"
+                android:layout_marginTop="10dp"
+                android:onClick="sendDisplayLiveViewH4"
+                android:background="#C877"
+                android:text="Live View HERO4" />
+                </TableRow>-->
+            <!--  <TableRow>
+
+                  <Button
+
+                      android:layout_width="0dp"
+                      android:layout_weight=".99"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_below="@+id/Button03"
+                      android:layout_marginTop="10dp"
+                      android:onClick="sendFlash"
+                      android:background="#3D1"
+                      android:text="Photo flash" />
+              </TableRow> -->
+            <TableRow>
+
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="10dp"
+                    android:onClick="startGPAudioRec"
+                    android:background="#77CD"
+                    android:text="Trigger + Audio" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="10dp"
+                    android:onClick="stopGPAudioRec"
+                    android:background="#66DD66"
+                    android:text="Stop + Audio" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/recstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Status: ready"
+                    android:textColor="#FF0000"/>
+
+            </TableRow>
+            <!-- <TableRow>
+
+                 <Button
+
+                     android:layout_width="0dp"
+                     android:layout_weight=".50"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_below="@+id/Button03"
+                     android:layout_marginTop="10dp"
+                     android:onClick="startGPSLog"
+                     android:background="#CC3300"
+                     android:text="Start GPS log" />
+                 <Button
+
+                     android:layout_width="0dp"
+                     android:layout_weight=".50"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_below="@+id/Button03"
+                     android:layout_marginTop="10dp"
+                     android:onClick="stopGPAudioRec"
+                     android:background="#6666FF"
+                     android:text="Stop GPS log" />
+             </TableRow>-->
+            <!--<TableRow>
+
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="10dp"
+                    android:onClick="sendMediaBrowser"
+                    android:background="#55CC"
+                    android:text="Media Browser" />
+            </TableRow>-->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Video resolution: " />
+            </TableRow>
+            <TableRow>
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR4K"
+                    android:text="4K" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR27K"
+                    android:text="2.7K" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR1440P"
+                    android:text="1440p" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR1080PS"
+                    android:text="1080p S" />
+            </TableRow>
+            <TableRow>
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR1080P"
+                    android:text="1080p" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR960P"
+                    android:text="960p" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVR720PS"
+                    android:text="720p" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendVRWVGA"
+                    android:text="WVGA" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Video FOV: " />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:onClick="sendNarrowFOV"
+                    android:text="@string/NarrowFOV" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:onClick="sendMediumFOV"
+                    android:text="@string/MediumFOV" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:onClick="sendWideFOV"
+                    android:text="@string/WideFOV" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Photo resolution: " />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send12MPW"
+                    android:text="12MP W" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send7MPM"
+                    android:text="7MP M" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send7MPW"
+                    android:text="7MP W" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send5MPW"
+                    android:text="5MP W" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="TimeLapse Interval: " />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send05TLI"
+                    android:text="0.5s" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send1TLI"
+                    android:text="1s" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send2TLI"
+                    android:text="2s" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="18dp"
+                    android:onClick="send5TLI"
+                    android:text="5s" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send10TLI"
+                    android:text="10s" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send30TLI"
+                    android:text="30s" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send60TLI"
+                    android:text="60s" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Frame Rate:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Choose frame rates according to resolution" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Hero3 Black/3+ Black/3+ Silver:" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="2.7K 30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="1080 60/30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="720p 120/60" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="15dp"
+                    android:text="H2/H3 Silver/White:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="1080 30" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="720p 30/60:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send120FPS"
+                    android:text="120" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send60FPS"
+                    android:text="60" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="send30FPS"
+                    android:text="30" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="LED blink:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLEDOff"
+                    android:text="OFF" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLED2"
+                    android:text="2" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLED4"
+                    android:text="4" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Spot meter:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendBuzzerOff"
+                    android:text="OFF" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".60"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendBuzzer100"
+                    android:text="ON" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="Profiles:" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Cinematic: HD video at 24FPS with the protune settings" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Action: 60FPS blended with jaw dropping HD video" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+
+                    android:layout_marginRight="41dp"
+                    android:text="Indoor: best setting for indoors" />
+            </TableRow>
+            <!--  <TableRow>
+                  <TextView
+                      android:id="@+id/textView49"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignRight="@+id/Button03"
+                      android:layout_marginTop="18dp"
+
+                      android:layout_marginRight="41dp"
+                      android:text="The profiles marked in green are user-based profiles, tap to set them up." />
+              </TableRow> -->
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:background="#216587"
+                    android:onClick="sendCinemaProfile"
+                    android:text="Cinematic" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:background="#212154"
+                    android:onClick="sendActionProfile"
+                    android:text="Action" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:background="#656565"
+                    android:onClick="sendIndoorProfile"
+                    android:text="Indoor" />
+            </TableRow>
+            <!-- <TableRow>
+                 <Button
+                     android:layout_width="0dp"
+                     android:layout_weight=".33"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginTop="0dp"
+                     android:background="#90FA"
+                     android:onClick="sendProfileOne"
+                     android:text="Profile 1" />
+                 <Button
+                     android:layout_width="0dp"
+                     android:layout_weight=".33"
+                     android:layout_marginRight="0dp"
+                     android:layout_marginLeft="3dp"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginTop="0dp"
+                     android:background="#90FA"
+                     android:onClick="sendProfileTwo"
+                     android:text="Profile 2" />
+                 <Button
+                     android:layout_width="0dp"
+                     android:layout_weight=".33"
+                     android:layout_marginLeft="3dp"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginTop="0dp"
+                     android:background="#90FA"
+                     android:onClick="sendProfileThree"
+                     android:text="Profile 3" />
+             </TableRow> -->
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Delete media:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendDeleteLast"
+                    android:text="Last" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendDeleteAll"
+                    android:text="All" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Connected to:  "
+        android:id="@+id/lmao"
+        android:layout_alignBottom="@+id/fabbutton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="N/A"
+        android:id="@+id/connectedcam"
+        android:layout_alignBottom="@+id/fabbutton"
+        android:layout_toEndOf="@+id/lmao" />
+
+</RelativeLayout>
+<!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_old_cam.xml -->

@@ -2,6 +2,34 @@
 <items version="2" >
 
     <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6384c6cd674a22610b932d9464aa6938d067f285">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-8163ae0c927f94ceb17612358e8120209f028e18.jar" />
+    </item>
+    <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="27f19641b81b1078e653d2f0e5d1ed44d158a785">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/classes-19887dd4ebbae908d76c4befdb0c720d3807edf4.jar" />
+    </item>
+    <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-0750e9a3d7467c84cb15f8fa1632b44c16e71be6.jar" />
+    </item>
+    <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="27f19641b81b1078e653d2f0e5d1ed44d158a785">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-17c61781daea22db6c0b4034beaadae2532c3f4b.jar" />
+    </item>
+    <item
         jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/classes.jar"
         jumboMode="false"
         revision="22.0.0"
@@ -14,6 +42,13 @@
         revision="22.0.0"
         sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
         <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-08bb975259bdb2d82965aa92744829797abea37d.jar" />
+    </item>
+    <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/classes-d5c704cd7942dd4b2947fabccd5c580fc5d6b9c2.jar" />
     </item>
     <item
         jar="/home/konrad2/Desktop/androidsdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
@@ -30,25 +65,11 @@
         <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-ff609caaa32a904a5ba7c6706dbfdaf0ecbc43dc.jar" />
     </item>
     <item
-        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="6384c6cd674a22610b932d9464aa6938d067f285">
-        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-8163ae0c927f94ceb17612358e8120209f028e18.jar" />
-    </item>
-    <item
         jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
         <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-31f7f05f7ee3b6daf795495c8347a99b03209c3f.jar" />
-    </item>
-    <item
-        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-0750e9a3d7467c84cb15f8fa1632b44c16e71be6.jar" />
     </item>
     <item
         jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
@@ -58,18 +79,18 @@
         <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/classes-fcc32d15b2800b5a5551708c6ce1d2864008d39b.jar" />
     </item>
     <item
+        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/classes-65ceecdc87e1d343de7edd2f981140b711eee54b.jar" />
+    </item>
+    <item
         jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
         <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b871304203dee35977dd3f2c433388d17b904fc1.jar" />
-    </item>
-    <item
-        jar="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="27f19641b81b1078e653d2f0e5d1ed44d158a785">
-        <dex dex="/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/goproherowear/build/intermediates/pre-dexed/debug/classes-17c61781daea22db6c0b4034beaadae2532c3f4b.jar" />
     </item>
 
 </items>

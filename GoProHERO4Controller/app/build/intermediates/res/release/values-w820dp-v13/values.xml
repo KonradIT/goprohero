@@ -3,4 +3,14 @@
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-w820dp/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-w820dp/ids.xml -->
+    <eat-comment/>
+    <item name="action_calc" type="id">Timelapse calculator</item>
+    <item name="action_profilesettings" type="id">Profile configuration</item>
+    <item name="btnCancelNotification" type="id">Cancel</item>
+    <item name="btnShowNotification" type="id">Show Notification</item>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-w820dp/strings.xml -->
+    <eat-comment/>
+    <string name="action_calc">Timelapse Calculator</string>
+    <string name="wifi">Open WiFi settings</string>
 </resources>

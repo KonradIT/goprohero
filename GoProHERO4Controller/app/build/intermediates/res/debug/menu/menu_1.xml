@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_protune" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_live" android:title="@string/action_oldcam"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_calc" android:title="@string/action_calc"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_profilesettings" android:title="Profile settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu><!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/menu/menu_1.xml -->

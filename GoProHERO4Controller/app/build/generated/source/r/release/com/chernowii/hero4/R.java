@@ -9,127 +9,1585 @@ package com.chernowii.hero4;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardBackgroundColor=0x7f010001;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardCornerRadius=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardElevation=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardMaxElevation=0x7f010004;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardPreventCornerOverlap=0x7f010006;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardUseCompatPadding=0x7f010005;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circle_border_color=0x7f010010;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circle_border_width=0x7f01000f;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circle_color=0x7f01000c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circle_padding=0x7f010011;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circle_radius=0x7f01000d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circle_radius_pressed=0x7f01000e;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+</table>
+         */
+        public static final int circular_layout_gravity=0x7f010023;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circular_text_size=0x7f010024;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPadding=0x7f010007;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingBottom=0x7f01000b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingLeft=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingRight=0x7f010009;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingTop=0x7f01000a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotColor=0x7f010017;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotColorSelected=0x7f010018;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotFadeInDuration=0x7f01001c;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotFadeOutDelay=0x7f01001a;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotFadeOutDuration=0x7f01001b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotFadeWhenIdle=0x7f010019;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotRadius=0x7f010015;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotRadiusSelected=0x7f010016;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotShadowColor=0x7f01001d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotShadowDx=0x7f01001f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotShadowDy=0x7f010020;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotShadowRadius=0x7f01001e;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotSpacing=0x7f010014;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x02</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x04</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>all</code></td><td>0x0F</td><td></td></tr>
+</table>
+         */
+        public static final int layout_box=0x7f010000;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int rectLayout=0x7f010021;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int roundLayout=0x7f010022;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shadow_width=0x7f010012;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int update_interval=0x7f010013;
+    }
+    public static final class color {
+        public static final int action_bar=0x7f060000;
+        public static final int black=0x7f060001;
+        public static final int blue=0x7f060002;
+        public static final int card_default_background=0x7f060003;
+        public static final int cardview_dark_background=0x7f060004;
+        public static final int cardview_light_background=0x7f060005;
+        public static final int cardview_shadow_end_color=0x7f060006;
+        public static final int cardview_shadow_start_color=0x7f060007;
+        public static final int dark_blue=0x7f060008;
+        public static final int dark_grey=0x7f060009;
+        public static final int digital_background=0x7f06000a;
+        public static final int digital_text=0x7f06000b;
+        public static final int disabled_text_light=0x7f06000c;
+        public static final int dismiss_close=0x7f06000d;
+        public static final int dismiss_close_pressed=0x7f06000e;
+        public static final int dismiss_overlay_bg=0x7f06000f;
+        public static final int green=0x7f060010;
+        public static final int grey=0x7f060011;
+        public static final int light_grey=0x7f060012;
+        public static final int orange=0x7f060013;
+        public static final int primary_text_dark=0x7f060014;
+        public static final int primary_text_light=0x7f060015;
+        public static final int red=0x7f060016;
+        public static final int secondary_text_light=0x7f060017;
+        public static final int semitransparent_grey=0x7f060018;
+        public static final int text_color=0x7f060019;
+        public static final int white=0x7f06001a;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
+        public static final int card_content_padding_rect_top=0x7f070002;
+        public static final int cardview_compat_inset_shadow=0x7f070003;
+        public static final int cardview_default_elevation=0x7f070004;
+        public static final int cardview_default_radius=0x7f070005;
+        public static final int close_button_diameter=0x7f070006;
+        public static final int digital_text_size=0x7f070007;
+        public static final int digital_text_size_round=0x7f070008;
+        public static final int digital_x_offset=0x7f070009;
+        public static final int digital_x_offset_round=0x7f07000a;
+        public static final int digital_y_offset=0x7f07000b;
+        public static final int dismiss_padding=0x7f07000c;
+        public static final int widget_margin=0x7f07000d;
     }
     public static final class drawable {
-        public static final int example_picture=0x7f020000;
-        public static final int ic_action_stat_reply=0x7f020001;
-        public static final int ic_action_stat_share=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
+        public static final int card_background=0x7f020000;
+        public static final int card_frame=0x7f020001;
+        public static final int card_frame_pressed=0x7f020002;
+        public static final int close_button=0x7f020003;
+        public static final int confirmation_animation=0x7f020004;
+        public static final int example_appwidget_preview=0x7f020005;
+        public static final int example_picture=0x7f020006;
+        public static final int generic_confirmation_00163=0x7f020007;
+        public static final int generic_confirmation_00164=0x7f020008;
+        public static final int generic_confirmation_00165=0x7f020009;
+        public static final int generic_confirmation_00166=0x7f02000a;
+        public static final int generic_confirmation_00167=0x7f02000b;
+        public static final int generic_confirmation_00168=0x7f02000c;
+        public static final int generic_confirmation_00169=0x7f02000d;
+        public static final int generic_confirmation_00170=0x7f02000e;
+        public static final int generic_confirmation_00171=0x7f02000f;
+        public static final int generic_confirmation_00172=0x7f020010;
+        public static final int generic_confirmation_00173=0x7f020011;
+        public static final int generic_confirmation_00174=0x7f020012;
+        public static final int generic_confirmation_00175=0x7f020013;
+        public static final int generic_confirmation_00185=0x7f020014;
+        public static final int generic_confirmation_00186=0x7f020015;
+        public static final int generic_confirmation_00187=0x7f020016;
+        public static final int generic_confirmation_00188=0x7f020017;
+        public static final int generic_confirmation_00189=0x7f020018;
+        public static final int generic_confirmation_00190=0x7f020019;
+        public static final int generic_confirmation_00191=0x7f02001a;
+        public static final int generic_confirmation_00192=0x7f02001b;
+        public static final int generic_confirmation_00193=0x7f02001c;
+        public static final int go_to_phone_00156=0x7f02001d;
+        public static final int go_to_phone_00157=0x7f02001e;
+        public static final int go_to_phone_00158=0x7f02001f;
+        public static final int go_to_phone_00159=0x7f020020;
+        public static final int go_to_phone_00160=0x7f020021;
+        public static final int go_to_phone_00161=0x7f020022;
+        public static final int go_to_phone_00162=0x7f020023;
+        public static final int go_to_phone_00163=0x7f020024;
+        public static final int go_to_phone_00164=0x7f020025;
+        public static final int go_to_phone_00165=0x7f020026;
+        public static final int go_to_phone_00166=0x7f020027;
+        public static final int go_to_phone_00167=0x7f020028;
+        public static final int go_to_phone_00168=0x7f020029;
+        public static final int go_to_phone_00169=0x7f02002a;
+        public static final int go_to_phone_00170=0x7f02002b;
+        public static final int go_to_phone_00171=0x7f02002c;
+        public static final int go_to_phone_00172=0x7f02002d;
+        public static final int go_to_phone_00173=0x7f02002e;
+        public static final int go_to_phone_00174=0x7f02002f;
+        public static final int go_to_phone_00175=0x7f020030;
+        public static final int go_to_phone_00176=0x7f020031;
+        public static final int go_to_phone_00177=0x7f020032;
+        public static final int go_to_phone_00178=0x7f020033;
+        public static final int go_to_phone_00185=0x7f020034;
+        public static final int go_to_phone_00186=0x7f020035;
+        public static final int go_to_phone_00187=0x7f020036;
+        public static final int go_to_phone_00188=0x7f020037;
+        public static final int go_to_phone_00189=0x7f020038;
+        public static final int go_to_phone_00190=0x7f020039;
+        public static final int go_to_phone_00191=0x7f02003a;
+        public static final int go_to_phone_00192=0x7f02003b;
+        public static final int go_to_phone_00193=0x7f02003c;
+        public static final int go_to_phone_00194=0x7f02003d;
+        public static final int go_to_phone_00195=0x7f02003e;
+        public static final int go_to_phone_00196=0x7f02003f;
+        public static final int go_to_phone_00197=0x7f020040;
+        public static final int go_to_phone_00198=0x7f020041;
+        public static final int go_to_phone_00199=0x7f020042;
+        public static final int go_to_phone_00200=0x7f020043;
+        public static final int go_to_phone_00210=0x7f020044;
+        public static final int go_to_phone_00211=0x7f020045;
+        public static final int go_to_phone_00212=0x7f020046;
+        public static final int go_to_phone_00213=0x7f020047;
+        public static final int go_to_phone_00214=0x7f020048;
+        public static final int go_to_phone_00215=0x7f020049;
+        public static final int go_to_phone_00216=0x7f02004a;
+        public static final int go_to_phone_00217=0x7f02004b;
+        public static final int go_to_phone_00218=0x7f02004c;
+        public static final int go_to_phone_00219=0x7f02004d;
+        public static final int go_to_phone_00220=0x7f02004e;
+        public static final int go_to_phone_00221=0x7f02004f;
+        public static final int go_to_phone_00222=0x7f020050;
+        public static final int go_to_phone_00223=0x7f020051;
+        public static final int go_to_phone_00224=0x7f020052;
+        public static final int go_to_phone_animation=0x7f020053;
+        public static final int ic_action_stat_reply=0x7f020054;
+        public static final int ic_action_stat_share=0x7f020055;
+        public static final int ic_full_cancel=0x7f020056;
+        public static final int ic_full_sad=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int ic_launcher2=0x7f020059;
+        public static final int ic_ms=0x7f02005a;
+        public static final int ic_photo=0x7f02005b;
+        public static final int ic_power=0x7f02005c;
+        public static final int ic_stop=0x7f02005d;
+        public static final int ic_tag=0x7f02005e;
+        public static final int ic_trigger=0x7f02005f;
+        public static final int icono=0x7f020060;
+        public static final int ig_video=0x7f020061;
+        public static final int preview_digital=0x7f020062;
+        public static final int preview_digital_circular=0x7f020063;
+        public static final int roundbutton=0x7f020064;
+        public static final int roundbutton2=0x7f020065;
+        public static final int roundbutton3=0x7f020066;
     }
     public static final class id {
-        public static final int Button01=0x7f080002;
-        public static final int Button02=0x7f080003;
-        public static final int Button03=0x7f080004;
-        public static final int Button04=0x7f080006;
-        public static final int Button05=0x7f080005;
-        public static final int button=0x7f08000c;
-        public static final int button1=0x7f080000;
-        public static final int button2=0x7f080009;
-        public static final int button3=0x7f080008;
-        public static final int button4=0x7f080007;
-        public static final int gridLayout1=0x7f080016;
-        public static final int scrollView1=0x7f08000a;
-        public static final int spinner=0x7f08000e;
-        public static final int text=0x7f080015;
-        public static final int textView1=0x7f08000d;
-        public static final int textView10=0x7f080010;
-        public static final int textView2=0x7f08000f;
-        public static final int textView3=0x7f080011;
-        public static final int textView4=0x7f080012;
-        public static final int textView5=0x7f080013;
-        public static final int textView6=0x7f080014;
-        public static final int textView7=0x7f080001;
-        public static final int wearLmao=0x7f08000b;
+        public static final int Button01=0x7f080030;
+        public static final int Button02=0x7f080031;
+        public static final int Button03=0x7f08003b;
+        public static final int Button04=0x7f080033;
+        public static final int Button05=0x7f080034;
+        public static final int ButtonVideo=0x7f080032;
+        public static final int action_calc=0x7f080000;
+        public static final int action_error=0x7f08007c;
+        public static final int action_h4cam=0x7f08008e;
+        public static final int action_live=0x7f08008d;
+        public static final int action_oldcam=0x7f08008b;
+        public static final int action_profilesettings=0x7f080001;
+        public static final int action_protune=0x7f08008c;
+        public static final int action_settings=0x7f08008a;
+        public static final int action_settings_three=0x7f080002;
+        public static final int action_setup=0x7f08008f;
+        public static final int action_success=0x7f08007e;
+        public static final int all=0x7f080008;
+        public static final int animation=0x7f08007f;
+        public static final int ayylmao=0x7f080079;
+        public static final int bottom=0x7f080009;
+        public static final int btnCancelNotification=0x7f080003;
+        public static final int btnShowNotification=0x7f080004;
+        public static final int button=0x7f08003a;
+        public static final int button1=0x7f08005f;
+        public static final int button10=0x7f080023;
+        public static final int button11=0x7f08003c;
+        public static final int button12=0x7f08003d;
+        public static final int button13=0x7f08003e;
+        public static final int button14=0x7f080084;
+        public static final int button15=0x7f080085;
+        public static final int button16=0x7f080086;
+        public static final int button17=0x7f080088;
+        public static final int button18=0x7f080087;
+        public static final int button19=0x7f080028;
+        public static final int button2=0x7f080038;
+        public static final int button20=0x7f080026;
+        public static final int button21=0x7f080029;
+        public static final int button22=0x7f080063;
+        public static final int button23=0x7f080027;
+        public static final int button24=0x7f08002a;
+        public static final int button25=0x7f08002b;
+        public static final int button26=0x7f08006c;
+        public static final int button27=0x7f08006d;
+        public static final int button28=0x7f08006e;
+        public static final int button29=0x7f080064;
+        public static final int button3=0x7f080036;
+        public static final int button30=0x7f080065;
+        public static final int button31=0x7f080066;
+        public static final int button32=0x7f08002c;
+        public static final int button33=0x7f08002d;
+        public static final int button39=0x7f080067;
+        public static final int button4=0x7f080035;
+        public static final int button40=0x7f080068;
+        public static final int button41=0x7f080069;
+        public static final int button42=0x7f08006a;
+        public static final int button5=0x7f08002f;
+        public static final int button6=0x7f080025;
+        public static final int button7=0x7f080020;
+        public static final int button8=0x7f080021;
+        public static final int button9=0x7f080022;
+        public static final int center=0x7f08000d;
+        public static final int center_horizontal=0x7f08000e;
+        public static final int center_vertical=0x7f08000f;
+        public static final int connectedcam=0x7f08005e;
+        public static final int dismiss_overlay_button=0x7f080082;
+        public static final int dismiss_overlay_explain=0x7f080081;
+        public static final int editText=0x7f080010;
+        public static final int editText2=0x7f080013;
+        public static final int editText3=0x7f080016;
+        public static final int email=0x7f080005;
+        public static final int error_message=0x7f08007d;
+        public static final int fabbutton=0x7f080014;
+        public static final int gridLayout1=0x7f080083;
+        public static final int left=0x7f08000a;
+        public static final int lmao=0x7f08005d;
+        public static final int message=0x7f080080;
+        public static final int mobile=0x7f080006;
+        public static final int name=0x7f080007;
+        public static final int recstatus=0x7f08003f;
+        public static final int right=0x7f08000b;
+        public static final int scrollView1=0x7f080039;
+        public static final int spinner=0x7f080061;
+        public static final int surfaceView=0x7f08002e;
+        public static final int text=0x7f08001d;
+        public static final int textView=0x7f08006f;
+        public static final int textView1=0x7f080060;
+        public static final int textView10=0x7f080041;
+        public static final int textView11=0x7f08001e;
+        public static final int textView12=0x7f08001f;
+        public static final int textView13=0x7f080062;
+        public static final int textView14=0x7f080011;
+        public static final int textView15=0x7f080046;
+        public static final int textView16=0x7f080047;
+        public static final int textView17=0x7f080012;
+        public static final int textView18=0x7f080048;
+        public static final int textView19=0x7f080049;
+        public static final int textView2=0x7f080070;
+        public static final int textView20=0x7f08004a;
+        public static final int textView21=0x7f08004b;
+        public static final int textView22=0x7f08004c;
+        public static final int textView23=0x7f08004d;
+        public static final int textView24=0x7f08004e;
+        public static final int textView25=0x7f080071;
+        public static final int textView26=0x7f08004f;
+        public static final int textView27=0x7f080050;
+        public static final int textView28=0x7f080051;
+        public static final int textView29=0x7f080040;
+        public static final int textView3=0x7f080042;
+        public static final int textView30=0x7f080052;
+        public static final int textView31=0x7f080053;
+        public static final int textView32=0x7f080054;
+        public static final int textView33=0x7f080055;
+        public static final int textView34=0x7f080058;
+        public static final int textView35=0x7f080057;
+        public static final int textView36=0x7f080056;
+        public static final int textView37=0x7f080072;
+        public static final int textView38=0x7f080059;
+        public static final int textView39=0x7f08005a;
+        public static final int textView4=0x7f080043;
+        public static final int textView40=0x7f08005b;
+        public static final int textView41=0x7f08005c;
+        public static final int textView42=0x7f080015;
+        public static final int textView43=0x7f080017;
+        public static final int textView44=0x7f080078;
+        public static final int textView45=0x7f080077;
+        public static final int textView46=0x7f080076;
+        public static final int textView47=0x7f080075;
+        public static final int textView48=0x7f080074;
+        public static final int textView49=0x7f080073;
+        public static final int textView5=0x7f080044;
+        public static final int textView50=0x7f080018;
+        public static final int textView51=0x7f080019;
+        public static final int textView52=0x7f08001a;
+        public static final int textView53=0x7f08001b;
+        public static final int textView54=0x7f08001c;
+        public static final int textView55=0x7f08006b;
+        public static final int textView6=0x7f080045;
+        public static final int textView7=0x7f080037;
+        public static final int textView8=0x7f08007a;
+        public static final int textView9=0x7f08007b;
+        public static final int title=0x7f080089;
+        public static final int top=0x7f08000c;
+        public static final int videoView=0x7f080024;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_wear_display=0x7f030001;
-        public static final int fragment_main=0x7f030002;
+        public static final int activity_calculator=0x7f040000;
+        public static final int activity_display=0x7f040001;
+        public static final int activity_hdr=0x7f040002;
+        public static final int activity_live_stuff=0x7f040003;
+        public static final int activity_live_stuff_h4=0x7f040004;
+        public static final int activity_liveview=0x7f040005;
+        public static final int activity_main=0x7f040006;
+        public static final int activity_media_browser=0x7f040007;
+        public static final int activity_ms=0x7f040008;
+        public static final int activity_ocburst=0x7f040009;
+        public static final int activity_ocphoto=0x7f04000a;
+        public static final int activity_ocprotune_controls=0x7f04000b;
+        public static final int activity_ocstop=0x7f04000c;
+        public static final int activity_octimelapse=0x7f04000d;
+        public static final int activity_octrigger=0x7f04000e;
+        public static final int activity_octurn_off=0x7f04000f;
+        public static final int activity_octurn_on=0x7f040010;
+        public static final int activity_ocvideo=0x7f040011;
+        public static final int activity_old_cam=0x7f040012;
+        public static final int activity_photo=0x7f040013;
+        public static final int activity_profile_config=0x7f040014;
+        public static final int activity_protune_controls=0x7f040015;
+        public static final int activity_stop=0x7f040016;
+        public static final int activity_tag=0x7f040017;
+        public static final int activity_trigger=0x7f040018;
+        public static final int activity_video=0x7f040019;
+        public static final int activity_wear_display=0x7f04001a;
+        public static final int activity_welcome_screen=0x7f04001b;
+        public static final int confirmation_activity_layout=0x7f04001c;
+        public static final int dismiss_overlay=0x7f04001d;
+        public static final int fragment_main=0x7f04001e;
+        public static final int go_pro_widget=0x7f04001f;
+        public static final int list_item=0x7f040020;
+        public static final int watch_card_content=0x7f040021;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int bottom=0x7f0b0000;
+        public static final int main=0x7f0b0001;
+        public static final int menu_1=0x7f0b0002;
+        public static final int menu_calculator=0x7f0b0003;
+        public static final int menu_hdr=0x7f0b0004;
+        public static final int menu_live_stuff=0x7f0b0005;
+        public static final int menu_live_stuff_h4=0x7f0b0006;
+        public static final int menu_m=0x7f0b0007;
+        public static final int menu_media_browser=0x7f0b0008;
+        public static final int menu_ocburst=0x7f0b0009;
+        public static final int menu_ocphoto=0x7f0b000a;
+        public static final int menu_ocprotune_controls=0x7f0b000b;
+        public static final int menu_ocstop=0x7f0b000c;
+        public static final int menu_octimelapse=0x7f0b000d;
+        public static final int menu_octrigger=0x7f0b000e;
+        public static final int menu_octurn_off=0x7f0b000f;
+        public static final int menu_octurn_on=0x7f0b0010;
+        public static final int menu_ocvideo=0x7f0b0011;
+        public static final int menu_old_cam=0x7f0b0012;
+        public static final int menu_photo=0x7f0b0013;
+        public static final int menu_profile_config=0x7f0b0014;
+        public static final int menu_protune_controls=0x7f0b0015;
+        public static final int menu_stop=0x7f0b0016;
+        public static final int menu_tag=0x7f0b0017;
+        public static final int menu_trigger=0x7f0b0018;
+        public static final int menu_video=0x7f0b0019;
+        public static final int menu_welcome_screen=0x7f0b001a;
+    }
+    public static final class mipmap {
+        public static final int ic_launcher=0x7f030000;
+        public static final int ic_launcher2=0x7f030001;
+        public static final int ic_launcher3=0x7f030002;
+        public static final int ic_launcherfour=0x7f030003;
+        public static final int ic_launcherthree=0x7f030004;
+        public static final int ic_launchertwo=0x7f030005;
+        public static final int ic_photo=0x7f030006;
+        public static final int ic_power=0x7f030007;
+        public static final int ic_power_second=0x7f030008;
     }
     public static final class string {
-        public static final int ETNI10=0x7f050000;
-        public static final int ETNI15=0x7f050001;
-        public static final int ETNI2=0x7f050002;
-        public static final int ETNI20=0x7f050003;
-        public static final int ETNI30=0x7f050004;
-        public static final int ETNI5=0x7f050005;
-        public static final int ETNP10=0x7f050006;
-        public static final int ETNP15=0x7f050007;
-        public static final int ETNP2=0x7f050008;
-        public static final int ETNP20=0x7f050009;
-        public static final int ETNP30=0x7f05000a;
-        public static final int ETNP5=0x7f05000b;
-        public static final int MediumFOV=0x7f05000c;
-        public static final int NarrowFOV=0x7f05000d;
-        public static final int WideFOV=0x7f05000e;
-        public static final int action_reply=0x7f05000f;
-        public static final int action_share=0x7f050010;
-        public static final int app_name=0x7f050011;
-        public static final int developed=0x7f050012;
-        public static final int hd=0x7f050013;
-        public static final int hello=0x7f050014;
-        public static final int hello_world=0x7f050015;
-        public static final int looping=0x7f050016;
-        public static final int midres=0x7f050017;
-        public static final int modemsburst=0x7f050018;
-        public static final int modemsnightlapse=0x7f050019;
-        public static final int modemstimelapse=0x7f05001a;
-        public static final int modephotocontinuous=0x7f05001b;
-        public static final int modephotonight=0x7f05001c;
-        public static final int modephotosingle=0x7f05001d;
-        public static final int modevideolooping=0x7f05001e;
-        public static final int modevideovideo=0x7f05001f;
-        public static final int modevideovideophoto=0x7f050020;
-        public static final int multishot=0x7f050021;
-        public static final int new_message_notification_placeholder_text_template=0x7f050022;
-        public static final int new_message_notification_title_template=0x7f050023;
-        public static final int notification_posted=0x7f050024;
-        public static final int photo=0x7f050025;
-        public static final int protuneOFF=0x7f050026;
-        public static final int protuneON=0x7f050027;
-        public static final int settings=0x7f050028;
-        public static final int single=0x7f050029;
-        public static final int slowmo=0x7f05002a;
-        public static final int stop=0x7f05002b;
-        public static final int tag=0x7f05002c;
-        public static final int title=0x7f05002d;
-        public static final int trigger=0x7f05002e;
-        public static final int video=0x7f05002f;
-        public static final int video2=0x7f050030;
-        public static final int videophoto=0x7f050031;
-        public static final int vidres_prompt=0x7f050032;
+        public static final int ETNI10=0x7f090000;
+        public static final int ETNI15=0x7f090001;
+        public static final int ETNI2=0x7f090002;
+        public static final int ETNI20=0x7f090003;
+        public static final int ETNI30=0x7f090004;
+        public static final int ETNI5=0x7f090005;
+        public static final int ETNP10=0x7f090006;
+        public static final int ETNP15=0x7f090007;
+        public static final int ETNP2=0x7f090008;
+        public static final int ETNP20=0x7f090009;
+        public static final int ETNP30=0x7f09000a;
+        public static final int ETNP5=0x7f09000b;
+        public static final int MediumFOV=0x7f09000c;
+        public static final int NarrowFOV=0x7f09000d;
+        public static final int WideFOV=0x7f09000e;
+        public static final int action_calc=0x7f09000f;
+        public static final int action_oldcam=0x7f090010;
+        public static final int action_reply=0x7f090011;
+        public static final int action_settings=0x7f090012;
+        public static final int action_settings_two=0x7f090013;
+        public static final int action_share=0x7f090014;
+        public static final int add_widget=0x7f090015;
+        public static final int app_name=0x7f090016;
+        public static final int appwidget_text=0x7f090017;
+        public static final int back=0x7f090018;
+        public static final int developed=0x7f090019;
+        public static final int hd=0x7f09001a;
+        public static final int hello=0x7f09001b;
+        public static final int hello_world=0x7f09001c;
+        public static final int looping=0x7f09001d;
+        public static final int mail=0x7f09001e;
+        public static final int midres=0x7f09001f;
+        public static final int modemsburst=0x7f090020;
+        public static final int modemsnightlapse=0x7f090021;
+        public static final int modemstimelapse=0x7f090022;
+        public static final int modephotocontinuous=0x7f090023;
+        public static final int modephotonight=0x7f090024;
+        public static final int modephotosingle=0x7f090025;
+        public static final int modevideolooping=0x7f090026;
+        public static final int modevideovideo=0x7f090027;
+        public static final int modevideovideophoto=0x7f090028;
+        public static final int multishot=0x7f090029;
+        public static final int my_digital_name=0x7f09002a;
+        public static final int new_message_notification_title_template=0x7f09002b;
+        public static final int notification_posted=0x7f09002c;
+        public static final int permdesc_flashlight=0x7f09002d;
+        public static final int permlab_flashlight=0x7f09002e;
+        public static final int photo=0x7f09002f;
+        public static final int protuneOFF=0x7f090030;
+        public static final int protuneON=0x7f090031;
+        public static final int reddit=0x7f090032;
+        public static final int settings=0x7f090033;
+        public static final int single=0x7f090034;
+        public static final int slowmo=0x7f090035;
+        public static final int stop=0x7f090036;
+        public static final int tag=0x7f090037;
+        public static final int title=0x7f090038;
+        public static final int title_activity_calculator=0x7f090039;
+        public static final int title_activity_hdr=0x7f09003a;
+        public static final int title_activity_live_stuff=0x7f09003b;
+        public static final int title_activity_live_stuff_h4=0x7f09003c;
+        public static final int title_activity_media_browser=0x7f09003d;
+        public static final int title_activity_ms=0x7f09003e;
+        public static final int title_activity_ocburst=0x7f09003f;
+        public static final int title_activity_ocphoto=0x7f090040;
+        public static final int title_activity_ocprotune_controls=0x7f090041;
+        public static final int title_activity_ocstop=0x7f090042;
+        public static final int title_activity_octimelapse=0x7f090043;
+        public static final int title_activity_octrigger=0x7f090044;
+        public static final int title_activity_octurn_off=0x7f090045;
+        public static final int title_activity_octurn_on=0x7f090046;
+        public static final int title_activity_ocvideo=0x7f090047;
+        public static final int title_activity_old_cam=0x7f090048;
+        public static final int title_activity_photo=0x7f090049;
+        public static final int title_activity_profile_config=0x7f09004a;
+        public static final int title_activity_protune_controls=0x7f09004b;
+        public static final int title_activity_stop=0x7f09004c;
+        public static final int title_activity_tag=0x7f09004d;
+        public static final int title_activity_trigger=0x7f09004e;
+        public static final int title_activity_video=0x7f09004f;
+        public static final int title_activity_welcome_screen=0x7f090050;
+        public static final int trigger=0x7f090051;
+        public static final int video=0x7f090052;
+        public static final int video2=0x7f090053;
+        public static final int videophoto=0x7f090054;
+        public static final int vidres_prompt=0x7f090055;
+        public static final int webpage=0x7f090056;
+        public static final int wifi=0x7f090057;
     }
     public static final class style {
-        /** 
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-         */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int ActionBarTheme=0x7f0a0000;
+        public static final int AppBaseTheme=0x7f0a0001;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
  All customizations that are NOT specific to a particular API-level can go here. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int MyActionBar=0x7f060002;
-        public static final int RED=0x7f060003;
+        public static final int AppTheme=0x7f0a0002;
+        public static final int Buttons=0x7f0a0003;
+        public static final int CardText=0x7f0a0007;
+        public static final int CardTitle=0x7f0a0008;
+        public static final int CardView=0x7f0a0004;
+        public static final int CardView_Dark=0x7f0a0005;
+        public static final int CardView_Light=0x7f0a0006;
+        public static final int DismissOverlayText=0x7f0a0009;
+        public static final int DotsPageIndicatorStyle=0x7f0a000a;
+        public static final int TextAppearance_Wearable_Large=0x7f0a000b;
+        public static final int TextAppearance_Wearable_Medium=0x7f0a000c;
+        public static final int TextAppearance_Wearable_Small=0x7f0a000d;
+        public static final int TextView_Large=0x7f0a000e;
+        public static final int TextView_Large_Light=0x7f0a000f;
+        public static final int TextView_Medium=0x7f0a0010;
+        public static final int TextView_Medium_Light=0x7f0a0011;
+        public static final int TextView_Small=0x7f0a0012;
+        public static final int TextView_Small_Light=0x7f0a0013;
+        public static final int Theme_Wearable=0x7f0a0014;
+        public static final int Theme_Wearable_Modal=0x7f0a0015;
     }
+    public static final class xml {
+        public static final int automotive_app_desc=0x7f050000;
+        public static final int go_pro_widget_info=0x7f050001;
+        public static final int watch_face=0x7f050002;
+    }
+    public static final class styleable {
+        /** Attributes that can be used with a BoxInsetLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #BoxInsetLayout_Layout_layout_box com.chernowii.hero4:layout_box}</code></td><td></td></tr>
+           </table>
+           @see #BoxInsetLayout_Layout_layout_box
+         */
+        public static final int[] BoxInsetLayout_Layout = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#layout_box}
+          attribute's value can be found in the {@link #BoxInsetLayout_Layout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x02</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x04</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>all</code></td><td>0x0F</td><td></td></tr>
+</table>
+          @attr name com.chernowii.hero4:layout_box
+        */
+        public static final int BoxInsetLayout_Layout_layout_box = 0;
+        /** Attributes that can be used with a CardView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.chernowii.hero4:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.chernowii.hero4:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.chernowii.hero4:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.chernowii.hero4:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.chernowii.hero4:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.chernowii.hero4:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.chernowii.hero4:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.chernowii.hero4:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.chernowii.hero4:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.chernowii.hero4:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.chernowii.hero4:contentPaddingTop}</code></td><td></td></tr>
+           </table>
+           @see #CardView_cardBackgroundColor
+           @see #CardView_cardCornerRadius
+           @see #CardView_cardElevation
+           @see #CardView_cardMaxElevation
+           @see #CardView_cardPreventCornerOverlap
+           @see #CardView_cardUseCompatPadding
+           @see #CardView_contentPadding
+           @see #CardView_contentPaddingBottom
+           @see #CardView_contentPaddingLeft
+           @see #CardView_contentPaddingRight
+           @see #CardView_contentPaddingTop
+         */
+        public static final int[] CardView = {
+            0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004,
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#cardBackgroundColor}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:cardBackgroundColor
+        */
+        public static final int CardView_cardBackgroundColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#cardCornerRadius}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:cardCornerRadius
+        */
+        public static final int CardView_cardCornerRadius = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#cardElevation}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:cardElevation
+        */
+        public static final int CardView_cardElevation = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#cardMaxElevation}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:cardMaxElevation
+        */
+        public static final int CardView_cardMaxElevation = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#cardPreventCornerOverlap}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:cardPreventCornerOverlap
+        */
+        public static final int CardView_cardPreventCornerOverlap = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#cardUseCompatPadding}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:cardUseCompatPadding
+        */
+        public static final int CardView_cardUseCompatPadding = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#contentPadding}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:contentPadding
+        */
+        public static final int CardView_contentPadding = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#contentPaddingBottom}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:contentPaddingBottom
+        */
+        public static final int CardView_contentPaddingBottom = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#contentPaddingLeft}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:contentPaddingLeft
+        */
+        public static final int CardView_contentPaddingLeft = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#contentPaddingRight}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:contentPaddingRight
+        */
+        public static final int CardView_contentPaddingRight = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#contentPaddingTop}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:contentPaddingTop
+        */
+        public static final int CardView_contentPaddingTop = 9;
+        /** Attributes that can be used with a CircledImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircledImageView_android_src android:src}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_circle_border_color com.chernowii.hero4:circle_border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_circle_border_width com.chernowii.hero4:circle_border_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_circle_color com.chernowii.hero4:circle_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_circle_padding com.chernowii.hero4:circle_padding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_circle_radius com.chernowii.hero4:circle_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_circle_radius_pressed com.chernowii.hero4:circle_radius_pressed}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircledImageView_shadow_width com.chernowii.hero4:shadow_width}</code></td><td></td></tr>
+           </table>
+           @see #CircledImageView_android_src
+           @see #CircledImageView_circle_border_color
+           @see #CircledImageView_circle_border_width
+           @see #CircledImageView_circle_color
+           @see #CircledImageView_circle_padding
+           @see #CircledImageView_circle_radius
+           @see #CircledImageView_circle_radius_pressed
+           @see #CircledImageView_shadow_width
+         */
+        public static final int[] CircledImageView = {
+            0x01010119, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#src}
+          attribute's value can be found in the {@link #CircledImageView} array.
+          @attr name android:src
+        */
+        public static final int CircledImageView_android_src = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circle_border_color}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circle_border_color
+        */
+        public static final int CircledImageView_circle_border_color = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circle_border_width}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circle_border_width
+        */
+        public static final int CircledImageView_circle_border_width = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circle_color}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circle_color
+        */
+        public static final int CircledImageView_circle_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circle_padding}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circle_padding
+        */
+        public static final int CircledImageView_circle_padding = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circle_radius}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circle_radius
+        */
+        public static final int CircledImageView_circle_radius = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circle_radius_pressed}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circle_radius_pressed
+        */
+        public static final int CircledImageView_circle_radius_pressed = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#shadow_width}
+          attribute's value can be found in the {@link #CircledImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:shadow_width
+        */
+        public static final int CircledImageView_shadow_width = 7;
+        /** Attributes that can be used with a DelayedConfirmationView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DelayedConfirmationView_update_interval com.chernowii.hero4:update_interval}</code></td><td></td></tr>
+           </table>
+           @see #DelayedConfirmationView_update_interval
+         */
+        public static final int[] DelayedConfirmationView = {
+            0x7f010013
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#update_interval}
+          attribute's value can be found in the {@link #DelayedConfirmationView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:update_interval
+        */
+        public static final int DelayedConfirmationView_update_interval = 0;
+        /** Attributes that can be used with a DotsPageIndicator.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotColor com.chernowii.hero4:dotColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotColorSelected com.chernowii.hero4:dotColorSelected}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotFadeInDuration com.chernowii.hero4:dotFadeInDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotFadeOutDelay com.chernowii.hero4:dotFadeOutDelay}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotFadeOutDuration com.chernowii.hero4:dotFadeOutDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotFadeWhenIdle com.chernowii.hero4:dotFadeWhenIdle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotRadius com.chernowii.hero4:dotRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotRadiusSelected com.chernowii.hero4:dotRadiusSelected}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotShadowColor com.chernowii.hero4:dotShadowColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotShadowDx com.chernowii.hero4:dotShadowDx}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotShadowDy com.chernowii.hero4:dotShadowDy}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotShadowRadius com.chernowii.hero4:dotShadowRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotsPageIndicator_dotSpacing com.chernowii.hero4:dotSpacing}</code></td><td></td></tr>
+           </table>
+           @see #DotsPageIndicator_dotColor
+           @see #DotsPageIndicator_dotColorSelected
+           @see #DotsPageIndicator_dotFadeInDuration
+           @see #DotsPageIndicator_dotFadeOutDelay
+           @see #DotsPageIndicator_dotFadeOutDuration
+           @see #DotsPageIndicator_dotFadeWhenIdle
+           @see #DotsPageIndicator_dotRadius
+           @see #DotsPageIndicator_dotRadiusSelected
+           @see #DotsPageIndicator_dotShadowColor
+           @see #DotsPageIndicator_dotShadowDx
+           @see #DotsPageIndicator_dotShadowDy
+           @see #DotsPageIndicator_dotShadowRadius
+           @see #DotsPageIndicator_dotSpacing
+         */
+        public static final int[] DotsPageIndicator = {
+            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b,
+            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f,
+            0x7f010020
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotColor}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotColor
+        */
+        public static final int DotsPageIndicator_dotColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotColorSelected}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotColorSelected
+        */
+        public static final int DotsPageIndicator_dotColorSelected = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotFadeInDuration}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotFadeInDuration
+        */
+        public static final int DotsPageIndicator_dotFadeInDuration = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotFadeOutDelay}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotFadeOutDelay
+        */
+        public static final int DotsPageIndicator_dotFadeOutDelay = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotFadeOutDuration}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotFadeOutDuration
+        */
+        public static final int DotsPageIndicator_dotFadeOutDuration = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotFadeWhenIdle}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotFadeWhenIdle
+        */
+        public static final int DotsPageIndicator_dotFadeWhenIdle = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotRadius}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotRadius
+        */
+        public static final int DotsPageIndicator_dotRadius = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotRadiusSelected}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotRadiusSelected
+        */
+        public static final int DotsPageIndicator_dotRadiusSelected = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotShadowColor}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotShadowColor
+        */
+        public static final int DotsPageIndicator_dotShadowColor = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotShadowDx}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotShadowDx
+        */
+        public static final int DotsPageIndicator_dotShadowDx = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotShadowDy}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotShadowDy
+        */
+        public static final int DotsPageIndicator_dotShadowDy = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotShadowRadius}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotShadowRadius
+        */
+        public static final int DotsPageIndicator_dotShadowRadius = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#dotSpacing}
+          attribute's value can be found in the {@link #DotsPageIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:dotSpacing
+        */
+        public static final int DotsPageIndicator_dotSpacing = 0;
+        /** Attributes that can be used with a WatchViewStub.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #WatchViewStub_rectLayout com.chernowii.hero4:rectLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #WatchViewStub_roundLayout com.chernowii.hero4:roundLayout}</code></td><td></td></tr>
+           </table>
+           @see #WatchViewStub_rectLayout
+           @see #WatchViewStub_roundLayout
+         */
+        public static final int[] WatchViewStub = {
+            0x7f010021, 0x7f010022
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#rectLayout}
+          attribute's value can be found in the {@link #WatchViewStub} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.chernowii.hero4:rectLayout
+        */
+        public static final int WatchViewStub_rectLayout = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#roundLayout}
+          attribute's value can be found in the {@link #WatchViewStub} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.chernowii.hero4:roundLayout
+        */
+        public static final int WatchViewStub_roundLayout = 1;
+        /** Attributes that can be used with a WearableHeaderTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #WearableHeaderTextView_circular_layout_gravity com.chernowii.hero4:circular_layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #WearableHeaderTextView_circular_text_size com.chernowii.hero4:circular_text_size}</code></td><td></td></tr>
+           </table>
+           @see #WearableHeaderTextView_circular_layout_gravity
+           @see #WearableHeaderTextView_circular_text_size
+         */
+        public static final int[] WearableHeaderTextView = {
+            0x7f010023, 0x7f010024
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circular_layout_gravity}
+          attribute's value can be found in the {@link #WearableHeaderTextView} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+</table>
+          @attr name com.chernowii.hero4:circular_layout_gravity
+        */
+        public static final int WearableHeaderTextView_circular_layout_gravity = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.chernowii.hero4.R.attr#circular_text_size}
+          attribute's value can be found in the {@link #WearableHeaderTextView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chernowii.hero4:circular_text_size
+        */
+        public static final int WearableHeaderTextView_circular_text_size = 1;
+    };
 }

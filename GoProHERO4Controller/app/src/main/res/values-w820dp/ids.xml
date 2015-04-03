@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnShowNotification" type="id">Show Notification</item>
+    <item name="btnCancelNotification" type="id">Cancel</item>
+    <item name="action_calc" type="id">Timelapse calculator</item>
+    <item name="action_profilesettings" type="id">Profile configuration</item>
+</resources>

@@ -3,11 +3,91 @@
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="action_bar">#002233</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="black">#000</color>
+    <color name="blue">#2878ff</color>
+    <color name="card_default_background">#E2E2E2</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <color name="cardview_dark_background">#FF202020</color>
+    <color name="cardview_light_background">#FFFAFAFA</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="dark_blue">#2955C5</color>
+    <color name="dark_grey">#424242</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="digital_background">#000000</color>
+    <color name="digital_text">#ffffff</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="disabled_text_light">#E0E0E0</color>
+    <color name="dismiss_close">#FF5151</color>
+    <color name="dismiss_close_pressed">#B83120</color>
+    <color name="dismiss_overlay_bg">#80000000</color>
+    <color name="green">#32CD32</color>
+    <color name="grey">#777777</color>
+    <color name="light_grey">#cccccc</color>
+    <color name="orange">#FF6D3F</color>
+    <color name="primary_text_dark">@color/white</color>
+    <color name="primary_text_light">@color/dark_grey</color>
+    <color name="red">#FF5252</color>
+    <color name="secondary_text_light">#A2A2A2</color>
+    <color name="semitransparent_grey">#66777777</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="text_color">#FFFFFF</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="BoxInsetLayout_Layout"><attr name="layout_box"><flag name="left" value="0x01"/><flag name="top" value="0x02"/><flag name="right" value="0x04"/><flag name="bottom" value="0x08"/><flag name="all" value="0x0F"/></attr></declare-styleable>
+    <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/></declare-styleable>
+    <declare-styleable name="CircledImageView"><attr name="android:src"/><attr format="color" name="circle_color"/><attr format="dimension" name="circle_radius"/><attr format="dimension" name="circle_radius_pressed"/><attr format="dimension" name="circle_border_width"/><attr format="color" name="circle_border_color"/><attr format="dimension" name="circle_padding"/><attr format="dimension" name="shadow_width"/></declare-styleable>
+    <declare-styleable name="DelayedConfirmationView"><attr format="integer" name="update_interval"/></declare-styleable>
+    <declare-styleable name="DotsPageIndicator"><attr format="dimension" name="dotSpacing"/><attr format="dimension" name="dotRadius"/><attr format="dimension" name="dotRadiusSelected"/><attr format="color" name="dotColor"/><attr format="color" name="dotColorSelected"/><attr format="boolean" name="dotFadeWhenIdle"/><attr format="integer" name="dotFadeOutDelay"/><attr format="integer" name="dotFadeOutDuration"/><attr format="integer" name="dotFadeInDuration"/><attr format="color" name="dotShadowColor"/><attr format="dimension" name="dotShadowRadius"/><attr format="dimension" name="dotShadowDx"/><attr format="dimension" name="dotShadowDy"/></declare-styleable>
+    <declare-styleable name="WatchViewStub"><attr format="reference" name="rectLayout"/><attr format="reference" name="roundLayout"/></declare-styleable>
+    <declare-styleable name="WearableHeaderTextView"><attr name="circular_layout_gravity"><flag name="left" value="0x03"/><flag name="top" value="0x30"/><flag name="right" value="0x05"/><flag name="bottom" value="0x50"/><flag name="center_vertical" value="0x10"/><flag name="center_horizontal" value="0x01"/><flag name="center" value="0x11"/></attr><attr format="dimension" name="circular_text_size"/></declare-styleable>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="card_content_padding_rect_top">4dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <dimen name="cardview_default_radius">2dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="close_button_diameter">104dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="digital_text_size">40dp</dimen>
+    <dimen name="digital_text_size_round">45dp</dimen>
+    <dimen name="digital_x_offset">15dp</dimen>
+    <dimen name="digital_x_offset_round">25dp</dimen>
+    <dimen name="digital_y_offset">90dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="dismiss_padding">16dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="widget_margin">8dp</dimen>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="action_calc" type="id">Timelapse calculator</item>
+    <item name="action_profilesettings" type="id">Profile configuration</item>
+    <item name="action_settings_three" type="id">Configure older cameras</item>
+    <item name="btnCancelNotification" type="id">Cancel</item>
+    <item name="btnShowNotification" type="id">Show Notification</item>
+    <item name="email" type="id">test2</item>
+    <item name="mobile" type="id">test3</item>
+    <item name="name" type="id">test</item>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="ETNI10">10sec</string>
@@ -25,9 +105,15 @@
     <string name="MediumFOV">Medium</string>
     <string name="NarrowFOV">Narrow</string>
     <string name="WideFOV">Wide</string>
+    <string name="action_calc">Timelapse Calculator</string>
+    <string name="action_oldcam">Configure H2/H3/H3+</string>
     <string name="action_reply">Reply</string>
+    <string name="action_settings">About</string>
+    <string name="action_settings_two">AYYLMAO</string>
     <string name="action_share">Share</string>
+    <string name="add_widget">Add widget</string>
     <string name="app_name">GoPro Hero</string>
+    <string name="appwidget_text">EXAMPLE</string>
     <string name="back">Back</string>
     <string name="developed">Developed by Konrad Iturbe (XDA / GITHUB: @KonradIT | /u/konrad-iturbe)</string>
     <string name="hd">HD</string>
@@ -46,8 +132,11 @@
     <string name="modevideovideo">Video</string>
     <string name="modevideovideophoto">VideoPic</string>
     <string name="multishot">MultiShot</string>
+    <string name="my_digital_name">My Digital</string>
     <string name="new_message_notification_title_template">New message: %1$s</string>
     <string name="notification_posted">Notification posted</string>
+    <string name="permdesc_flashlight">Ayy lmao</string>
+    <string name="permlab_flashlight">Ayy lmao shrek republic reddit</string>
     <string name="photo">Photo</string>
     <string name="protuneOFF">PT OFF</string>
     <string name="protuneON">PT ON</string>
@@ -58,12 +147,37 @@
     <string name="stop">Stop</string>
     <string name="tag">Tag</string>
     <string name="title">Hello Notification!</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="title_activity_hdr">HDR Controller</string>
+    <string name="title_activity_live_stuff">LiveStuff</string>
+    <string name="title_activity_live_stuff_h4">LiveStuffH4</string>
+    <string name="title_activity_media_browser">Media Browser</string>
+    <string name="title_activity_ms">MSActivity</string>
+    <string name="title_activity_ocburst">OCBurst</string>
+    <string name="title_activity_ocphoto">OCPhoto</string>
+    <string name="title_activity_ocprotune_controls">OCProtuneControls</string>
+    <string name="title_activity_ocstop">OCStop</string>
+    <string name="title_activity_octimelapse">OCTimelapse</string>
+    <string name="title_activity_octrigger">OCTrigger</string>
+    <string name="title_activity_octurn_off">OCTurnOff</string>
+    <string name="title_activity_octurn_on">OCTurnOn</string>
+    <string name="title_activity_ocvideo">OCVideo</string>
+    <string name="title_activity_old_cam">OldCamActivity</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <string name="title_activity_profile_config">ProfileConfig</string>
+    <string name="title_activity_protune_controls">Protune Controls</string>
+    <string name="title_activity_stop">StopActivity</string>
+    <string name="title_activity_tag">TagActivity</string>
+    <string name="title_activity_trigger">TriggerActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_welcome_screen">Welcome to GoProHero</string>
     <string name="trigger">Trigger</string>
     <string name="video">Video</string>
     <string name="video2">Video</string>
     <string name="videophoto">VidPic</string>
     <string name="vidres_prompt">Video resolutions</string>
     <string name="webpage">Webpage</string>
+    <string name="wifi">Open WiFi settings</string>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ActionBarTheme" parent="android:Theme.Material">
@@ -85,5 +199,21 @@
     </style>
     <style name="Buttons" parent="android:Theme.Material.Light">
 
+    </style>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style>
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
 </resources>

@@ -7,39 +7,13 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:onClick="sendTriggerWear"
+        android:onClick="sendNotifWear"
         android:layout_marginTop="0dp"
-        android:text="SHOOT"
+        android:text="Enable HeroControl for Android Wear (click here)"
         android:radius="25dp"
 
-        android:background="#780000"/>
-
-    <Button
-        android:id="@+id/Button01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="0dp"
-        android:onClick="sendStopWear"
-        android:text="STOP"
-        android:background="#667788"/>
-
-    <Button
-        android:id="@+id/Button02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button01"
-        android:layout_alignRight="@+id/Button01"
-        android:onClick="sendTagWear"
-        android:background="#336699"
-        android:elevation="10dp"
-
-        android:layout_alignParentBottom="true"
-        android:text="TAG"
-        android:layout_below="@+id/Button01" />
+        android:background="#44CC"/>
 
 </RelativeLayout>

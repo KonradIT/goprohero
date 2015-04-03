@@ -2,40 +2,73 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chernowii.hero4"
     android:versionCode="1"
-    android:versionName="1.0" >
-    <receiver android:name=".MediaButtonIntentReceiver">
-        <intent-filter>
-            <action android:name="android.intent.action.MEDIA_BUTTON" />
-        </intent-filter>
-    </receiver>
+    android:versionName="1.5" >
+
     <uses-sdk
-        android:minSdkVersion="18"
-        android:targetSdkVersion="20" />
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
 
     <intent-filter android:priority="5" >
         <action android:name="android.intent.action.MEDIA_BUTTON" />
     </intent-filter>
 
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
+    <uses-feature android:name="android.hardware.type.watch" /> <!-- Required to act as a custom watch face. -->
+    <uses-permission android:name="com.google.android.permission.PROVIDE_BACKGROUND" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher2"
-        android:label="@string/app_name"
+        android:icon="@drawable/icono"
+        android:label="GoPro Hero App"
         android:theme="@style/AppBaseTheme" >
+        <meta-data
+            android:name="com.google.android.gms.car.notification.SmallIcon"
+            android:resource="@drawable/icono" />
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+
+        <!--
+        <receiver android:name="MediaButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        -->
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:icon="@drawable/icono"
+            android:label="GoProHero App" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -73,6 +106,114 @@
                 <action android:name="com.chernowii.hero4.SHOW_NOTIFICATION" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".ProtuneControls"
+            android:label="@string/title_activity_protune_controls" >
+        </activity>
+        <activity
+            android:name=".LiveStuff"
+            android:label="@string/title_activity_live_stuff" >
+        </activity>
+        <activity
+            android:name=".LiveStuffH4"
+            android:label="@string/title_activity_live_stuff_h4" >
+        </activity>
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="@string/title_activity_welcome_screen" >
+        </activity>
+        <activity
+            android:name=".HDR"
+            android:label="@string/title_activity_hdr" >
+        </activity>
+
+        <receiver android:name=".GoProWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/go_pro_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".MediaBrowser"
+            android:label="@string/title_activity_media_browser" >
+        </activity>
+        <activity
+            android:name=".TriggerActivity"
+            android:label="@string/title_activity_trigger" >
+        </activity>
+        <activity
+            android:name=".TagActivity"
+            android:label="@string/title_activity_tag" >
+        </activity>
+        <activity
+            android:name=".StopActivity"
+            android:label="@string/title_activity_stop" >
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name=".PhotoActivity"
+            android:label="@string/title_activity_photo" >
+        </activity>
+        <activity
+            android:name=".MSActivity"
+            android:label="@string/title_activity_ms" >
+        </activity>
+        <activity
+            android:name=".Calculator"
+            android:label="@string/title_activity_calculator" >
+        </activity>
+        <activity
+            android:name=".ProfileConfig"
+            android:label="@string/title_activity_profile_config" >
+        </activity>
+        <activity
+            android:name=".OldCamActivity"
+            android:label="@string/title_activity_old_cam" >
+        </activity>
+        <activity
+            android:name=".OCTrigger"
+            android:label="@string/title_activity_octrigger" >
+        </activity>
+        <activity
+            android:name=".OCTurnOff"
+            android:label="@string/title_activity_octurn_off" >
+        </activity>
+        <activity
+            android:name=".OCTurnOn"
+            android:label="@string/title_activity_octurn_on" >
+        </activity>
+        <activity
+            android:name=".OCStop"
+            android:label="@string/title_activity_ocstop" >
+        </activity>
+        <activity
+            android:name=".OCVideo"
+            android:label="@string/title_activity_ocvideo" >
+        </activity>
+        <activity
+            android:name=".OCPhoto"
+            android:label="@string/title_activity_ocphoto" >
+        </activity>
+        <activity
+            android:name=".OCBurst"
+            android:label="@string/title_activity_ocburst" >
+        </activity>
+        <activity
+            android:name=".OCTimelapse"
+            android:label="@string/title_activity_octimelapse" >
+        </activity>
+        <activity
+            android:name=".OCProtuneControls"
+            android:label="@string/title_activity_ocprotune_controls" >
+        </activity>
     </application>
 
 </manifest>

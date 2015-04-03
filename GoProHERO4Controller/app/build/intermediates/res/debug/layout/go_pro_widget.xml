@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="#55CC">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trigger"
+        android:onClick="widgetTrigger"
+        android:id="@+id/button14"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag"
+        android:onClick="widgetTrigger"
+        android:id="@+id/button12"
+        android:layout_below="@+id/button14"
+        android:layout_alignStart="@+id/button14"
+        android:layout_alignEnd="@+id/button14" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:onClick="widgetStop"
+        android:id="@+id/button15"
+        android:layout_below="@+id/button14"
+        android:layout_alignStart="@+id/button14"
+        android:layout_marginTop="46dp"
+        android:layout_alignEnd="@+id/button12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        android:onClick="widgetVideo"
+        android:id="@+id/button16"
+        android:layout_below="@+id/button15"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button15" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MultiShot"
+        android:onClick="widgetMS"
+        android:id="@+id/button18"
+        android:layout_below="@+id/button16"
+        android:layout_alignStart="@+id/button16"
+        android:layout_marginTop="46dp"
+        android:layout_alignEnd="@+id/button16" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo"
+        android:onClick="widgetPhoto"
+        android:id="@+id/button17"
+        android:layout_below="@+id/button16"
+        android:layout_alignEnd="@+id/button16"
+        android:layout_alignStart="@+id/button18" />
+
+</RelativeLayout><!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/go_pro_widget.xml -->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#336699" />
+    <corners android:bottomRightRadius="32dp"
+        android:bottomLeftRadius="32dp"
+        android:topRightRadius="32dp"
+        android:topLeftRadius="32dp"
+        android:background="#336699"/>
+</shape><!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/drawable-mdpi/roundbutton2.xml -->

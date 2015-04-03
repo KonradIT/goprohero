@@ -127,16 +127,6 @@
                     android:text="@string/hd" />
             </TableRow>
             <TableRow>
-                <Button
-
-                    android:id="@+id/wearLmao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="sendWear"
-                    android:text="Enable Wear Controls"
-                    />
-            </TableRow>
-            <TableRow>
 
                 <Button
                     android:id="@+id/button"
@@ -156,7 +146,7 @@
                     android:layout_below="@+id/Button03"
                     android:onClick="sendModeVideoLooping"
                     android:text="@string/modevideolooping"
-                    android:id="@+id/button2" />
+                    android:id="@+id/button10" />
                 <Button
 
                     android:layout_width="0dp"
@@ -167,7 +157,7 @@
 
                     android:onClick="sendModeVideoVideoPhoto"
                     android:text="@string/modevideovideophoto"
-                    android:id="@+id/button2" />
+                    android:id="@+id/button11" />
             </TableRow>
             <TableRow>
                 <Button
@@ -180,7 +170,7 @@
                     android:layout_marginTop="0dp"
                     android:onClick="sendModePhotoSingle"
                     android:text="@string/modephotosingle"
-                    android:id="@+id/button2" />
+                    android:id="@+id/button12" />
                 <Button
 
                     android:layout_width="0dp"
@@ -191,7 +181,7 @@
                     android:layout_marginTop="0dp"
                     android:onClick="sendModePhotoContinuous"
                     android:text="@string/modephotocontinuous"
-                    android:id="@+id/button2" />
+                    android:id="@+id/button13" />
                 <Button
 
                     android:layout_width="0dp"
@@ -254,39 +244,17 @@
                     />
 
             </TableRow>
-            <TableRow>
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignRight="@+id/Button03"
-                    android:layout_marginRight="41dp"
-                    android:text="Video Protune: " />
-            </TableRow>
-            <TableRow>
-                <Button
 
-                    android:layout_width="0dp"
-                    android:layout_weight=".50"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/textView2"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendProtuneON"
-                    android:text="@string/protuneON" />
-                <Button
+            <Button
 
-                    android:layout_width="0dp"
-                    android:layout_weight=".50"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendProtuneOFF"
-                    android:text="@string/protuneOFF" />
-
-            </TableRow>
+                android:layout_width="0dp"
+                android:layout_weight=".99"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Button03"
+                android:layout_marginTop="0dp"
+                android:onClick="sendDisplayAdvancedProtune"
+                android:text="Protune settings" />
             <TableRow>
                 <TextView
                     android:id="@+id/textView10"
@@ -296,82 +264,6 @@
                     android:layout_alignRight="@+id/Button03"
                     android:layout_marginRight="41dp"
                     android:text="NightLapse Exposure: " />
-            </TableRow>
-            <TableRow>
-                <Button
-
-                    android:layout_width="0dp"
-                    android:layout_weight=".33"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendETNP2"
-                    android:text="@string/ETNI2" />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight=".33"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendETNP5"
-                    android:text="@string/ETNI5" />
-                <Button
-
-                    android:layout_width="0dp"
-                    android:layout_weight=".33"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendETNP10"
-                    android:text="@string/ETNI10" />
-
-            </TableRow>
-
-            <TableRow>
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight=".33"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendETNP15"
-                    android:text="@string/ETNI15" />
-                <Button
-
-                    android:layout_width="0dp"
-                    android:layout_weight=".33"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendETNP20"
-                    android:text="@string/ETNI20" />
-                <Button
-
-                    android:layout_width="0dp"
-                    android:layout_weight=".33"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/Button03"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendETNP30"
-                    android:text="@string/ETNI30" />
-            </TableRow>
-
-            <!--COMMENT-->
-            <TableRow>
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignRight="@+id/Button03"
-                    android:layout_marginRight="41dp"
-                    android:text="NightPhoto Exposure: " />
             </TableRow>
             <TableRow>
                 <Button
@@ -435,6 +327,82 @@
                     android:layout_below="@+id/Button03"
                     android:layout_marginTop="0dp"
                     android:onClick="sendETNI30"
+                    android:text="@string/ETNP30" />
+            </TableRow>
+
+            <!--COMMENT-->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginRight="41dp"
+                    android:text="NightPhoto Exposure: " />
+            </TableRow>
+            <TableRow>
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendETNP2"
+                    android:text="@string/ETNP2" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendETNP5"
+                    android:text="@string/ETNP5" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendETNP10"
+                    android:text="@string/ETNP10" />
+
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendETNP15"
+                    android:text="@string/ETNP15" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendETNP20"
+                    android:text="@string/ETNP20" />
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Button03"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendETNP30"
                     android:text="@string/ETNP30" />
             </TableRow>
 
@@ -609,7 +577,7 @@
             </TableRow>
             <TableRow>
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textView16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -715,52 +683,6 @@
                     android:layout_marginTop="0dp"
                     android:onClick="send30FPS"
                     android:text="30" />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignRight="@+id/Button03"
-                    android:layout_marginRight="41dp"
-                    android:text="Video WB (PT ON needed):" />
-            </TableRow>
-            <TableRow>
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight=".25"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendWBAuto"
-                    android:text="Auto" />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight=".25"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendWB3000K"
-                    android:text="3000k" />
-                <Button
-
-                    android:layout_width="0dp"
-                    android:layout_weight=".25"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendWB5500K"
-                    android:text="5500k" />
-                <Button
-
-                    android:layout_width="0dp"
-                    android:layout_weight=".25"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginTop="0dp"
-                    android:onClick="sendWB6500K"
-                    android:text="6500k" />
             </TableRow>
             <TableRow>
                 <TextView
@@ -930,6 +852,227 @@
                     android:layout_marginTop="0dp"
                     android:onClick="sendIndoorProfile"
                     android:text="Indoor" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Misc controls:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendWiFiOff"
+                    android:text="Turn WiFi Off" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendCamOff"
+                    android:text="Turn Cam Off" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Full Off: WiFi + Camera OFF:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendFullOff"
+                    android:text="FULL OFF" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="Delete media:" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendDeleteLast"
+                    android:text="Last" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".99"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendDeleteAll"
+                    android:text="All" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="LCD (H4 Silver):" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDOn"
+                    android:text="ON" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDOff"
+                    android:text="OFF" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="LCD Brightness (H4 Silver):" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDHigh"
+                    android:text="High" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDMedium"
+                    android:text="Medium" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDLow"
+                    android:text="Low" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="LCD Lock (H4 Silver):" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDLock"
+                    android:text="Lock" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDUnlock"
+                    android:text="Unlock" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/Button03"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="41dp"
+                    android:text="LCD Sleep (H4 Silver):" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCDNever"
+                    android:text="Never" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCD1Min"
+                    android:text="1 Min" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCD2Min"
+                    android:text="2 Min" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="sendLCD3Min"
+                    android:text="3 Min" />
             </TableRow>
         </TableLayout>
     </ScrollView>

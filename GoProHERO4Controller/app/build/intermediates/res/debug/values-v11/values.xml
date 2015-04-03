@@ -4,6 +4,19 @@
     <eat-comment/>
     <color name="action_bar">#002233</color>
     <color name="text_color">#FFFFFF</color>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-v11/ids.xml -->
+    <eat-comment/>
+    <item name="action_calc" type="id">Timelapse calculator</item>
+    <item name="action_profilesettings" type="id">Profile configuration</item>
+    <item name="action_settings_three" type="id">Configure older cameras</item>
+    <item name="btnCancelNotification" type="id">Cancel</item>
+    <item name="btnShowNotification" type="id">Show Notification</item>
+    <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-v11/strings.xml -->
+    <eat-comment/>
+    <string name="action_calc">Timelapse Calculator</string>
+    <string name="permdesc_flashlight">Ayy lmao</string>
+    <string name="permlab_flashlight">Ayy lmao shrek republic reddit</string>
+    <string name="wifi">Open WiFi settings</string>
     <!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="ActionBarTheme" parent="android:Theme.Holo.Light">

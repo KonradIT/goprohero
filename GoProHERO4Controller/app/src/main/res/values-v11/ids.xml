@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_settings_three" type="id">Configure older cameras</item>
+    <item name="btnShowNotification" type="id">Show Notification</item>
+    <item name="btnCancelNotification" type="id">Cancel</item>
+    <item name="action_calc" type="id">Timelapse calculator</item>
+    <item name="action_profilesettings" type="id">Profile configuration</item>
+</resources>

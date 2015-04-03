@@ -61,15 +61,49 @@
     <string name="hello">Hello World!</string>
     <string name="title">Hello Notification!</string>
     <string name="notification_posted">Notification posted</string>
- 
-   <!--   <string-array name="vidres_arrays">
-        <item>4K 30/4K 15</item>
-        <item>2.7K 60/2.7K 30</item>
-        <item>1440p 100/1440p 30</item>
-        <item>1080p 120/1080p 60</item>
-        <item>1080p 60/1080p 30</item>
-        <item>1080p 30/1080p 24</item>
-        <item>720p 240/720p 120</item>
-        <item>WVGA 240</item>
-    </string-array> -->
+    <string name="title_activity_protune_controls">Protune Controls</string>
+    <string name="action_settings">About</string>
+    <string name="action_oldcam">Configure H2/H3/H3+</string>
+    <string name="action_settings_two">AYYLMAO</string>
+    <string name="title_activity_live_stuff">LiveStuff</string>
+    <string name="title_activity_live_stuff_h4">LiveStuffH4</string>
+    <string name="title_activity_welcome_screen">Welcome to GoProHero</string>
+    <string name="title_activity_hdr">HDR Controller</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="my_digital_name">My Digital</string>
+    <string name="title_activity_media_browser">Media Browser</string>
+    <string name="title_activity_trigger">TriggerActivity</string>
+    <string name="title_activity_tag">TagActivity</string>
+    <string name="title_activity_stop">StopActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <string name="title_activity_ms">MSActivity</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="action_calc">Timelapse Calculator</string>
+    <string name="wifi">Open WiFi settings</string>
+    <string name="title_activity_profile_config">ProfileConfig</string>
+    <string name="permdesc_flashlight">Ayy lmao</string>
+    <string name="permlab_flashlight">Ayy lmao shrek republic reddit</string>
+    <string name="title_activity_old_cam">OldCamActivity</string>
+    <string name="title_activity_octrigger">OCTrigger</string>
+    <string name="title_activity_octurn_off">OCTurnOff</string>
+    <string name="title_activity_octurn_on">OCTurnOn</string>
+    <string name="title_activity_ocstop">OCStop</string>
+    <string name="title_activity_ocvideo">OCVideo</string>
+    <string name="title_activity_ocphoto">OCPhoto</string>
+    <string name="title_activity_ocburst">OCBurst</string>
+    <string name="title_activity_octimelapse">OCTimelapse</string>
+    <string name="title_activity_ocprotune_controls">OCProtuneControls</string>
+
+    <!--   <string-array name="vidres_arrays">
+         <item>4K 30/4K 15</item>
+         <item>2.7K 60/2.7K 30</item>
+         <item>1440p 100/1440p 30</item>
+         <item>1080p 120/1080p 60</item>
+         <item>1080p 60/1080p 30</item>
+         <item>1080p 30/1080p 24</item>
+         <item>720p 240/720p 120</item>
+         <item>WVGA 240</item>
+     </string-array> -->
 </resources>

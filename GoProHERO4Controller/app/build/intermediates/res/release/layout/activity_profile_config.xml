@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.chernowii.hero4.ProfileConfig">
+
+    <TextView android:text="Profiles configuration page" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:id="@+id/textView55" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set profile 1"
+        android:onClick="configOne"
+        android:id="@+id/button26"
+        android:layout_below="@+id/textView55"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set profile 2"
+        android:id="@+id/button27"
+        android:layout_below="@+id/button26"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set profile 3"
+        android:id="@+id/button28"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/button27"
+        android:layout_alignStart="@+id/button27" />
+
+</RelativeLayout>
+<!-- From: file:/home/konrad2/AndroidstudioProjects/GoProHERO4Controller/app/src/main/res/layout/activity_profile_config.xml -->
