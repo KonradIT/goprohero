@@ -2,15 +2,10 @@
 
 A better GoPro app for android. 
 
-![](http://i.imgur.com/moBRw6K.png)
+![](http://i.imgur.com/LLNsa97.png)
+![](http://i.imgur.com/QMj7edB.png)
+![](http://i.imgur.com/3xF4lOD.png)
 
-![](http://i.imgur.com/vwjyWiE.png)
-
-![](http://i.imgur.com/bEiaWh3.png)
-
-![](http://i.imgur.com/wVrRE0v.png)
-
-![](http://i.imgur.com/I6urBmL.png)
 
 ###The story: 
 
@@ -36,21 +31,21 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 
 | ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
 |-------------------- |----------------------|---------------------|--------------------|
-|    Android wear support (fix static activity calling)                  | |                     |  
 |  |  |  | Make compatible from API 18 JB to 5.1 (Latest)  |
 |                     |                      |                     | All camera settings |
+|  |  |   |   Smart notification with buttons (for android wear, lockscreen, etc...) |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
-| Fix title in status bar |  |  |  |
+|   |   |  | HDR Control for Hero4  |
 |                     |                       |                    | Fix NightLapse         |
-| Car stereo controller  |  |  |  |
+|  |  |  Car stereo controller  |  |
 |         |  | |  Landscape UI       |
-| GPS logging |    |     |     |
-| Live preview |    |     |     |
+|  |  GPS logging  |     |     |
+|  |  Live preview  |     |     |
 | media explorer |    |    |      |
 | auto download photos |    |    |    |
-| Audio recorder when it starts recording |   |   |   |
-|     support all cameras      |  | | | 
+|  |   |   | Audio recorder when it starts recording   |
+|       | support all cameras | | | 
 |           |             |            | Make it faster |
 | Show camera data |          |        |                 |
 
@@ -59,9 +54,11 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Material design
 * Big buttons
 * No waiting time for connection
+* HDR trigger with 4 types of bracketing levels, for Hero4 only
 * Trigger using volume rockers (up = record/take pic, down = stop)
 * Lots of settings
 * Profiles (action, indoor, cinematic)
+* HeroControl: notification with controls for the lockscreen, android wear, etc...
 
 And more
 
