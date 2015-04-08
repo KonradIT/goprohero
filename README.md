@@ -53,7 +53,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |  |   |   | Audio recorder when it starts recording   |
 |       |  | | support all cameras | 
 |           |             |            | Make it faster |
-| Show camera data |          |        |                 |
+|  |    Show camera data      |        |                 |
 
 ###Features: 
 
