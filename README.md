@@ -2,9 +2,11 @@
 
 A better GoPro app for android. 
 
-![](http://i.imgur.com/LLNsa97.png)
-![](http://i.imgur.com/QMj7edB.png)
-![](http://i.imgur.com/3xF4lOD.png)
+![](http://i.imgur.com/OFyuV7Z.png)
+
+---
+
+![](http://i.imgur.com/oq80K9k.png)
 
 ####Amazon App Store:
 
