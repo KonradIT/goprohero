@@ -6,6 +6,9 @@ A better GoPro app for android.
 ![](http://i.imgur.com/QMj7edB.png)
 ![](http://i.imgur.com/3xF4lOD.png)
 
+####Amazon App Store:
+
+![http://imgur.com/t3A9MAN](http://www.amazon.com/Chernowii-CamControl/dp/B00VZ2W7JE/ref=sr_1_37?s=mobile-apps&ie=UTF8&qid=1428826809&sr=1-37&keywords=gopro)
 
 ###The story: 
 
