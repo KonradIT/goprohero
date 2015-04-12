@@ -1,4 +1,6 @@
-#GoProHero 
+#CamControl
+
+**Due to GoPro's trademark policy the app name is now CamControl, to avoid any issues in the future**
 
 A better GoPro app for android. 
 
