@@ -72,6 +72,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Profiles (action, indoor, cinematic)
 * HeroControl: notification with controls for the lockscreen, android wear, etc...
 * Compatible with HERO2/HERO3 White, Silver and Black/HERO3+ Black and Silver/HERO4 Black and Silver
+* View camera status (pics left/taken, mode/submode, etc...) and the buttons will be overlayed depending on the camera's status 
 
 And more
 
