@@ -45,6 +45,11 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |  |  |  | Make compatible from API 18 JB to 5.1 (Latest)  |
 |                     |                      |                     | All camera settings |
 |  |  |   |   Smart notification with buttons (for android wear, lockscreen, etc...) |
+|  |  |   |   Android Wear support |
+|  |  |   |   Android Auto support |
+|  | Sony Smartwatch 1/2 support |   |    |
+|  | Samsung Gear/Gear2/Neo/Neo2 support |   |  |
+| Tasker plugin |  |   |   |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
 |   |   |  | HDR Control for Hero4  |
@@ -55,7 +60,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 | Watchface with last downloaded picture |    |     |     |
 | Widget |    |     |     |
 |  |  Live preview (HERO2/H3/H3+ is done, HERO4 is in progress)  |     |     |
-| media explorer |    |    |      |
+| media explorer (sort options, Android TV slideshow, chromecast slideshow)|    |    |      |
 | auto download photos |    |    |    |
 |  |   |   | Audio recorder when it starts recording   |
 |       |  | | support all cameras | 
@@ -73,6 +78,8 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Lots of settings
 * Profiles (action, indoor, cinematic)
 * HeroControl: notification with controls for the lockscreen, android wear, etc...
+* Android Wear watch app
+* Android Auto support
 * Compatible with HERO2/HERO3 White, Silver and Black/HERO3+ Black and Silver/HERO4 Black and Silver
 * View camera status (pics left/taken, mode/submode, etc...) and the buttons will be overlayed depending on the camera's status 
 
