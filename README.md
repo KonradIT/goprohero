@@ -53,11 +53,13 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |  |  |  | Make compatible from API 18 JB to 5.1 (Latest)  |
 |                     |                      |                     | All camera settings |
 |  |  |   |   Smart notification with buttons (for android wear, lockscreen, etc...) |
-|  |  |   |   Android Wear support |
+|  |  |   |   Android Wear support (notification + app)|
+|  | Finish HERO2/HERO3/HERO3+ Android Wear app |   |   |
 |  |  |   |   Android Auto support |
 |  | Sony Smartwatch 1/2 support |   |    |
 |  | Samsung Gear/Gear2/Neo/Neo2 support |   |  |
 | Tasker plugin |  |   |   |
+| Android Wear: gestures, camera info such as rec time, battery, mode, pics left..., PROFILES, live preview with interval and photo browser |  |   |   |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
 |   |   |  | HDR Control for Hero4  |
@@ -66,7 +68,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |         |  | |  Landscape UI       |
 | GPS logging |    |     |     |
 | Watchface with last downloaded picture |    |     |     |
-| Widget |    |     |     |
+| Widget (PoD, photo collage of the last 9/16/25 pics) |    |     |     |
 |  |  Live preview (HERO2/H3/H3+ is done, HERO4 is in progress)  |     |     |
 | media explorer (sort options, Android TV slideshow, chromecast slideshow)|    |    |      |
 | auto download photos |    |    |    |
