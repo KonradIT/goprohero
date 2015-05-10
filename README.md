@@ -17,8 +17,10 @@ A better GoPro app for android.
 [![Foo](http://i.imgur.com/aI9zDN7.png?1)](https://www.pushbullet.com/channel?tag=goproapp)
 
 ####Video:
-
-[####VIMEO](https://vimeo.com/127370489)
+######Android Wear HERO4 demo:
+[VIMEO](https://vimeo.com/127370489)
+######App with GoPro HERO4 overview:
+Coming soon!
 
 ###The story: 
 
