@@ -16,8 +16,7 @@ A better GoPro app for android.
 
 ###Updates:
 
-<a class="pushbullet-subscribe-widget" data-channel="goproapp" data-widget="button" data-size="small"></a>
-<script type="text/javascript">(function(){var a=document.createElement('script');a.type='text/javascript';a.async=true;a.src='https://widget.pushbullet.com/embed.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);})();</script>
+[![Foo](http://www.britishtechnetwork.com/wp-content/uploads/2015/03/pushbullet.png)](https://www.pushbullet.com/channel?tag=goproapp)
 
 ####Video:
 
