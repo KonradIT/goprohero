@@ -8,15 +8,13 @@ A better GoPro app for android.
 
 ---
 
-![](http://i.imgur.com/oq80K9k.png)
-
 ####Amazon App Store:
 
 [![Foo](http://i.imgur.com/t3A9MAN.png)](http://www.amazon.com/Chernowii-CamControl/dp/B00VZ2W7JE/ref=sr_1_37?s=mobile-apps&ie=UTF8&qid=1428826809&sr=1-37&keywords=gopro)
 
 ###Updates:
 
-[![Foo](http://www.britishtechnetwork.com/wp-content/uploads/2015/03/pushbullet.png)](https://www.pushbullet.com/channel?tag=goproapp)
+[![Foo](http://i.imgur.com/aI9zDN7.png?1)](https://www.pushbullet.com/channel?tag=goproapp)
 
 ####Video:
 
