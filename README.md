@@ -14,6 +14,15 @@ A better GoPro app for android.
 
 [![Foo](http://i.imgur.com/t3A9MAN.png)](http://www.amazon.com/Chernowii-CamControl/dp/B00VZ2W7JE/ref=sr_1_37?s=mobile-apps&ie=UTF8&qid=1428826809&sr=1-37&keywords=gopro)
 
+###Updates:
+
+<a class="pushbullet-subscribe-widget" data-channel="goproapp" data-widget="button" data-size="small"></a>
+<script type="text/javascript">(function(){var a=document.createElement('script');a.type='text/javascript';a.async=true;a.src='https://widget.pushbullet.com/embed.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);})();</script>
+
+####Video:
+
+[####VIMEO](https://vimeo.com/127370489)
+
 ###The story: 
 
 When you connect your GoPro camera to your android device and use the GoPro app while doing something, you may have noticed that the buttons are small (even on my Nexus 6 display) and to access the settings there is too much tapping.
@@ -87,8 +96,5 @@ And more
 
 Hopefully the items of the to do list will be in the list above.
 
-###Updates: 
-
-Subscribe to pushbullet: #goproapp
 
 Developed by Konrad Iturbe
