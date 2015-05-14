@@ -54,17 +54,18 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |                     |                      |                     | All camera settings |
 |  |  |   |   Smart notification with buttons (for android wear, lockscreen, etc...) |
 |  |  |   |   Android Wear support (notification + app)|
-|  | Finish HERO2/HERO3/HERO3+ Android Wear app |   |   |
+|  |  |   |  Finish HERO2/HERO3/HERO3+ Android Wear app |
 |  |  |   |   Android Auto support |
 |  | Sony Smartwatch 1/2 support |   |    |
 |  | Samsung Gear/Gear2/Neo/Neo2 support |   |  |
 | Tasker plugin |  |   |   |
-| Android Wear: gestures, camera info such as rec time, battery, mode, pics left..., PROFILES, live preview with interval and photo browser |  |   |   |
+| Android Wear: gestures, camera info such as rec time / battery, mode, pics left... / live preview with interval / photo browser |  |   |   |
+| | | Android Wear: PROFILES |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
 |   |   |  | HDR Control for Hero4  |
 |                     |                       |                    | Fix NightLapse         |
-|  |  |  Car stereo controller  |  |
+|  |   Car stereo controller |    |  |
 |         |  | |  Landscape UI       |
 | GPS logging |    |     |     |
 | Watchface with last downloaded picture |    |     |     |
