@@ -60,7 +60,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |  | Samsung Gear/Gear2/Neo/Neo2 support |   |  |
 | Tasker plugin |  |   |   |
 | Android Wear: gestures, camera info such as rec time / battery, mode, pics left... / live preview with interval / photo browser |  |   |   |
-| | | Android Wear: PROFILES |
+| | | | Android Wear: PROFILES |
 |                     |                      |                      | Material + simple UI |
 |                     | Fix specific H4 modes |                    |                       |
 |   |   |  | HDR Control for Hero4  |
