@@ -62,6 +62,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |  |  |   |   Android Auto support |
 |  | Sony Smartwatch 1/2 support |   |    |
 |  | Samsung Gear/Gear2/Neo/Neo2 support |   |  |
+|  | Pebble support |   |  |
 | Tasker plugin |  |   |   |
 | Android Wear: gestures, camera info such as rec time / battery, mode, pics left... / live preview with interval / photo browser |  |   |   |
 | | | | Android Wear: PROFILES |
