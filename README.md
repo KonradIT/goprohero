@@ -4,7 +4,7 @@
 
 A better GoPro app for android. 
 
-![](http://i.imgur.com/n79rbuI.png)
+![](http://i.imgur.com/Tov2upX.png?1)
 
 ---
 
