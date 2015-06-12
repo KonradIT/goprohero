@@ -67,7 +67,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 | Android Wear: gestures, camera info such as rec time / battery, mode, pics left... / live preview with interval / photo browser |  |   |   |
 | | | | Android Wear: PROFILES |
 |                     |                      |                      | Material + simple UI |
-|                     | Fix specific H4 modes |                    |                       |
+|                     |  |                    |             Fix specific H4 modes          |
 |   |   |  | HDR Control for Hero4  |
 |                     |                       |                    | Fix NightLapse         |
 |  |   Car stereo controller |    |  |
