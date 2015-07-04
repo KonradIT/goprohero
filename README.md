@@ -10,8 +10,8 @@ A better GoPro app for android.
 ###Google Play Store:
 
 <a href="https://play.google.com/store/apps/details?id=com.chernowii.hero4">
-  <img alt="Android app on Google Play"
-       src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+  <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
 </a>
 
 ####Amazon App Store:
