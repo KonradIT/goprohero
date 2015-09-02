@@ -14,14 +14,6 @@ A better GoPro app for android.
        src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
 </a>
 
-####Amazon App Store:
-
-[![Foo](http://i.imgur.com/t3A9MAN.png)](http://www.amazon.com/Chernowii-CamControl/dp/B00VZ2W7JE/ref=sr_1_37?s=mobile-apps&ie=UTF8&qid=1428826809&sr=1-37&keywords=gopro)
-
-###Updates:
-
-[![Foo](http://i.imgur.com/aI9zDN7.png?1)](https://www.pushbullet.com/channel?tag=goproapp)
-
 ####Video:
 ######Android Wear HERO4 demo:
 [VIMEO](https://vimeo.com/127370489)
@@ -30,7 +22,7 @@ A better GoPro app for android.
 [VIMEO](https://vimeo.com/127999890)
 
 ######App with GoPro HERO4 overview:
-Coming soon!
+[VIMEO](https://vimeo.com/135391928)
 
 ###The story: 
 
@@ -105,6 +97,7 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 * Compatible with HERO2/HERO3 White, Silver and Black/HERO3+ Black and Silver/HERO4 Black and Silver
 * View camera status (pics left/taken, mode/submode, etc...) and the buttons will be overlayed depending on the camera's status 
 * Myo armband compatible
+* CM SDK QuickSettings API support
 
 And more
 
