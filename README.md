@@ -1,8 +1,6 @@
 #CamControl
 CamControl is an open-source app to control GoPro cameras over Wifi. It is designed to ease the process of controlling your GoPro camera, shooting in tons of ways and live viewing what the lil grey box sees, also see the camera details such as remaing time and many more!. Featuring TRUE integration with the Android ecosystem (Android Phone/Tablet, Android Wear, Android TV coming soon and Android Auto) and extra nifty features such as Myo armband integration and HDR, one of many.
 
-**Due to GoPro's trademark policy the app name is now CamControl, to avoid any issues in the future**
-
 ![](http://i.imgur.com/Tov2upX.png?1)
 
 ---
