@@ -1,6 +1,5 @@
 #CamControl
-
-A better GoPro app for android. 
+CamControl is an open-source app to control GoPro cameras over Wifi. It is designed to ease the process of controlling your GoPro camera, shooting in tons of ways and live viewing what the lil grey box sees, also see the camera details such as remaing time and many more!. Featuring TRUE integration with the Android ecosystem (Android Phone/Tablet, Android Wear, Android TV coming soon and Android Auto) and extra nifty features such as Myo armband integration and HDR, one of many.
 
 **Due to GoPro's trademark policy the app name is now CamControl, to avoid any issues in the future**
 
@@ -24,6 +23,8 @@ A better GoPro app for android.
  * GoPro HERO3 White, Silver and Black
  * GoPro HERO3+ Black and Silver
  * GoPro HERO4 Black and Silver
+* Control ALL the settings of GoPro camera
+* Live view of camera feed
 * Big buttons
 * No waiting time for connection
 * No crashes!
@@ -39,11 +40,7 @@ A better GoPro app for android.
 * Myo armband compatible
 * CM SDK QuickSettings API support
 
-And more
-
-Hopefully the items of the to do list will be in the list above.
-
-###The story
+##The story
 When you connect your GoPro camera to your android device and use the GoPro app while doing something, you may have noticed that the buttons are small (even on my Nexus 6 display) and to access the settings there is too much tapping.
 
 Also, it takes a while to connect and it disconnects when you close the app. It's a pain to go to the app, tap on Control, tap that little button to see the media in the camera, tap the last pic and download it. 
