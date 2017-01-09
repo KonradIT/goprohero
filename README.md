@@ -1,31 +1,49 @@
 #CamControl
 
-**Due to GoPro's trademark policy the app name is now CamControl, to avoid any issues in the future**
-
 A better GoPro app for android. 
+
+**Due to GoPro's trademark policy the app name is now CamControl, to avoid any issues in the future**
 
 ![](http://i.imgur.com/Tov2upX.png?1)
 
 ---
-###Google Play Store:
-
+###Google Play Store
 <a href="https://play.google.com/store/apps/details?id=com.chernowii.hero4">
   <img alt="Get it on Google Play"
        src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
 </a>
 
-####Video:
-######Android Wear HERO4 demo:
-[VIMEO](https://vimeo.com/127370489)
+##Video Demos
+- [Overview with GoPro HERO4](https://vimeo.com/135391928)
+- [Android Wear with HERO4 demo](https://vimeo.com/127370489)
+- [Android Wear with HERO3 demo](https://vimeo.com/127999890)
 
-######Android Wear HERO3 demo:
-[VIMEO](https://vimeo.com/127999890)
+##Features
+* Compatible with:
+ * GoPro HERO2 White, Silver and Black
+ * GoPro HERO3 White, Silver and Black
+ * GoPro HERO3+ Black and Silver
+ * GoPro HERO4 Black and Silver
+* Big buttons
+* No waiting time for connection
+* No crashes!
+* HDR trigger with 4 types of bracketing levels, for Hero4 only
+* Trigger using volume rockers (up = record/take pic, down = stop)
+* Lots of settings
+* Profiles (action, indoor, cinematic)
+* Notification with controls for the lockscreen, android wear, etc...
+* Android Wear watch app with controls and profiles
+* Android Auto support
+* Material design
+* View camera status (pics left/taken, mode/submode, etc...) and the buttons will be overlayed depending on the camera's status 
+* Myo armband compatible
+* CM SDK QuickSettings API support
 
-######App with GoPro HERO4 overview:
-[VIMEO](https://vimeo.com/135391928)
+And more
 
-###The story: 
+Hopefully the items of the to do list will be in the list above.
 
+###The story
 When you connect your GoPro camera to your android device and use the GoPro app while doing something, you may have noticed that the buttons are small (even on my Nexus 6 display) and to access the settings there is too much tapping.
 
 Also, it takes a while to connect and it disconnects when you close the app. It's a pain to go to the app, tap on Control, tap that little button to see the media in the camera, tap the last pic and download it. 
@@ -36,7 +54,7 @@ This is my attempt to reduce the friction and make a buttery smooth experience w
 
 Also, three main resolutions are added to simplify the process of configuration.
 
-HeroControl makes it easy to control your camera even without unlocking your phone! Its a notification with buttons accessible from the lockscreen and it works with android wear.
+CamControl makes it easy to control your camera even without unlocking your phone! Its a notification with buttons accessible from the lockscreen and it works with android wear.
 
 It features material design, something the GoPro app does not have.
 
@@ -46,8 +64,7 @@ You can add more features by forking and pushing requests.
 
 The app will have constant updates and new features, because I am very active.
 
-####Todo: 
-
+##Todo
 Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software development much more effective and faster
 
 | ICE BOX             | IN PROGRESS          | TESTING             | COMPLETE           |
@@ -81,27 +98,6 @@ Using [scrum](https://www.youtube.com/watch?v=oyVksFviJVE) it makes software dev
 |           |             |            | Make it faster |
 |  |         |        |     Show camera data (H4)            |
 |  |  Show camera data (H3)  |        |       |
-
-###Features: 
-
-* Material design
-* Big buttons
-* No waiting time for connection
-* HDR trigger with 4 types of bracketing levels, for Hero4 only
-* Trigger using volume rockers (up = record/take pic, down = stop)
-* Lots of settings
-* Profiles (action, indoor, cinematic)
-* HeroControl: notification with controls for the lockscreen, android wear, etc...
-* Android Wear watch app with controls and profiles
-* Android Auto support
-* Compatible with HERO2/HERO3 White, Silver and Black/HERO3+ Black and Silver/HERO4 Black and Silver
-* View camera status (pics left/taken, mode/submode, etc...) and the buttons will be overlayed depending on the camera's status 
-* Myo armband compatible
-* CM SDK QuickSettings API support
-
-And more
-
-Hopefully the items of the to do list will be in the list above.
 
 
 Developed by Konrad Iturbe
